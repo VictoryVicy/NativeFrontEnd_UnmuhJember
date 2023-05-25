@@ -21,13 +21,21 @@ body {
 
 nav {
     position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     background-color: #f8f8f8;
     padding: 20px;
     z-index: 2;
-    width: 100vw;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
 }
 
 .nav-links {
@@ -149,4 +157,10 @@ nav {
     height: 100%;
     object-fit: cover;
     object-position: center;
+}
+
+/* ! text */
+.desc {
+    /* justify */
+    text-align: justify;
 }
