@@ -203,8 +203,19 @@
               <div class="content">
                 <div class="col-md-6"
                   style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
-                  <h2>Title 1</h2>
-                  <p>Content 1</p>
+                  <div>
+                    <style>
+                      .title {
+                        font-family: 'Poppins', sans-serif;
+                        font-size: 50px;
+                        font-weight: 700;
+                        margin-bottom: 20px;
+                      }
+                    </style>
+                  <h1 class="title">Teknik Informatika</h1>
+                  <hr>
+                  <p>Unversitas Muhammadiyah Jember</p>
+                  </div>
                 </div>
                 <div class="col-md-6"
                   style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
@@ -226,9 +237,6 @@
           </div>
           <div class="slider-navigation">
             <button>
-              <i class="fa-solid fa-chevron-left"></i>
-            </button>
-            <button>
               <i class="fa-solid fa-chevron-right"></i>
             </button>
           </div>
@@ -236,9 +244,22 @@
       </div>
     </section>
     <!-- about -->
-    <section>
-      <div class="container" style="min-height: 100vh;">
-
+    <style>
+      .desc {
+        /* justify */
+        text-align: justify;
+      }
+    </style>
+    <section style="background-color: #f8f8f8 !important;">
+      <div class="container" style="min-height: 100vh; display: flex; justify-content: center; align-items: center;">
+        <div class="col-md-6" style="padding: 10px;">
+            <img src="https://images.unsplash.com/photo-1506619216599-9d16d0903dfd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1280&h=720"
+              alt="Coffee" class="img-fluid rounded-circle">
+        </div>
+        <div class="col-md-6" style="padding: 10px;">
+          <h3>Tentang</h3>
+          <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis perferendis ad impedit magnam ducimus asperiores blanditiis quaerat laborum. Repellat magnam numquam amet provident doloremque aliquam rerum a harum beatae doloribus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi, deleniti nam commodi dolorum quasi molestiae id beatae unde nemo, quam architecto cumque odio excepturi. Consectetur nam perspiciatis assumenda corporis nostrum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque tempora non qui, mollitia quasi facilis consectetur voluptates deserunt, optio aspernatur recusandae deleniti vero omnis magni, est officiis laboriosam at animi?</p>
+        </div>
       </div>
     </section>
   </main>
@@ -259,7 +280,7 @@
       next: 1
     }
 
-    var prevButton = document.querySelector(".slider-navigation button:first-child");
+    var prevButton = document.querySelector(".slider-navigation button:last-child");
     var nextButton = document.querySelector(".slider-navigation button:last-child");
     var sliders = document.querySelectorAll(".slider-content figure");
 

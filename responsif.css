@@ -78,12 +78,14 @@
 .img-fluid {
     max-width: 100%;
     height: auto;
+
 }
 
 /* breakpoint md */
 
 
 @media (min-width: 768px) {
+
     .col-md {
         flex: 1 0 0%;
     }
@@ -186,5 +188,27 @@
     .col-md-12 {
         flex: 0 0 auto;
         width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .col-md-1,
+    .col-md-2,
+    .col-md-3,
+    .col-md-4,
+    .col-md-5,
+    .col-md-6,
+    .col-md-7,
+    .col-md-8,
+    .col-md-9,
+    .col-md-10,
+    .col-md-11,
+    .col-md-12 {
+        width: 100%;
+        float: none;
     }
 }
