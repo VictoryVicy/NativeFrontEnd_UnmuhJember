@@ -84,3 +84,25 @@ html, body {
 .slider-navigation button.disabled {
     pointer-events: none;
 }
+
+.slider-content .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+}
+
+.slider-content .content>div {
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 767px) {
+    .slider-content .content>div {
+        width: 100%;
+        float: none;
+    }
+}
