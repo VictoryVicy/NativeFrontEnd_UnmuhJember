@@ -9,6 +9,7 @@
 body {
     overflow-x: hidden;
     font-family: 'Open Sans', sans-serif !important;
+    background-color: #f8f8f8;
 }
 
 /* nvbar */
@@ -189,7 +190,6 @@ nav {
 
 /* ! text */
 .desc {
-    /* justify */
     text-align: justify;
 }
 

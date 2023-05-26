@@ -27,12 +27,11 @@
     }
 
     body::-webkit-scrollbar-thumb {
-      background-color: rgb(112, 190, 180);
-      outline: 1px solid rgb(0, 89, 255);
+      background-color: #846c5b;
     }
 
     .scrolled {
-      background-color: rgb(112, 190, 180);
+      background-color: #f8f8f8;
       width: auto;
       margin: 5px 20px 0 20px !important;
       border-radius: 40px;
@@ -106,7 +105,7 @@
       </div>
     </section>
     <!-- about -->
-    <section style="background-color: #f8f8f8 !important;">
+    <section class="about" style="background-color: #f8f8f8 !important;">
       <div class="container" style="min-height: 100vh; display: flex; justify-content: center; align-items: center;">
         <div class="col-md-6" style="padding: 10px 100px;">
           <img src="assets/img/test.png" alt="Coffee" class="img-fluid rounded-circle">
@@ -122,6 +121,185 @@
             deleniti vero omnis magni, est officiis laboriosam at animi?</p>
         </div>
       </div>
+    </section>
+    <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 490" xmlns="http://www.w3.org/2000/svg"
+      class="transition duration-300 ease-in-out delay-150">
+      <path
+        d="M 0,500 C 0,500 0,125 0,125 C 42.0908430040445,120.22951968066828 84.181686008089,115.45903936133655 128,128 C 171.818313991911,140.54096063866345 217.3640989716884,170.39336223532212 268,166 C 318.6359010283116,161.60663776467788 374.36191810515743,122.96751169737503 432,113 C 489.63808189484257,103.03248830262497 549.188228607682,121.73659097517778 593,119 C 636.811771392318,116.26340902482222 664.8851674641148,92.08612440191388 702,85 C 739.1148325358852,77.91387559808612 785.2711015358589,87.91891141716671 838,101 C 890.7288984641411,114.08108858283329 950.0304263924502,130.23822992941925 1006,132 C 1061.9695736075498,133.76177007058075 1114.6071928943404,121.12816886515634 1167,129 C 1219.3928071056596,136.87183113484366 1271.5408020301884,165.24909460995534 1317,168 C 1362.4591979698116,170.75090539004466 1401.2295989849058,147.87545269502232 1440,125 C 1440,125 1440,500 1440,500 Z"
+        stroke="none" stroke-width="0" fill="#0d47a1" fill-opacity="0.4"
+        class="transition-all duration-300 ease-in-out delay-150 path-0"></path>
+      <path
+        d="M 0,500 C 0,500 0,250 0,250 C 39.19044912633164,235.8437838695181 78.38089825266329,221.68756773903618 135,211 C 191.6191017473367,200.31243226096382 265.66685611567846,193.09351291337336 312,208 C 358.33314388432154,222.90648708662664 376.951677284623,259.93838060747044 415,277 C 453.048322715377,294.06161939252956 510.5264347458299,291.1529646567448 566,286 C 621.4735652541701,280.8470353432552 674.9425837320575,273.44976076555025 726,273 C 777.0574162679425,272.55023923444975 825.7032303259402,279.0479922810542 874,269 C 922.2967696740598,258.9520077189458 970.2444949641811,232.35827011023295 1017,239 C 1063.755505035819,245.64172988976705 1109.3187898173358,285.5189272780142 1149,291 C 1188.6812101826642,296.4810727219858 1222.4803457664755,267.5660207777102 1270,255 C 1317.5196542335245,242.4339792222898 1378.7598271167622,246.2169896111449 1440,250 C 1440,250 1440,500 1440,500 Z"
+        stroke="none" stroke-width="0" fill="#0d47a1" fill-opacity="0.53"
+        class="transition-all duration-300 ease-in-out delay-150 path-1"></path>
+      <path
+        d="M 0,500 C 0,500 0,375 0,375 C 41.794403764307816,382.2990166274551 83.58880752861563,389.59803325491026 135,386 C 186.41119247138437,382.40196674508974 247.43917364984532,367.9068836078141 292,377 C 336.5608263501547,386.0931163921859 364.65449787200305,418.7744323138333 417,418 C 469.34550212799695,417.2255676861667 545.9428348621427,382.9953871368527 594,370 C 642.0571651378573,357.0046128631473 661.5741626794259,365.24401913875596 701,370 C 740.4258373205741,374.75598086124404 799.7605144201538,376.0285363081234 852,375 C 904.2394855798462,373.9714636918766 949.3837796399589,370.6418356287504 996,368 C 1042.616220360041,365.3581643712496 1090.704367020011,363.4041211768749 1143,355 C 1195.295632979989,346.5958788231251 1251.798752279997,331.74167966375 1302,334 C 1352.201247720003,336.25832033625 1396.1006238600016,355.629160168125 1440,375 C 1440,375 1440,500 1440,500 Z"
+        stroke="none" stroke-width="0" fill="#0d47a1" fill-opacity="1"
+        class="transition-all duration-300 ease-in-out delay-150 path-2"></path>
+    </svg>
+    <style>
+      .inner {
+        --bg-color: #4EA5D9;
+        --bg-color-light: #9bc4db;
+        --text-color-hover: #fff;
+        --box-shadow-color: #4ea6d96c;
+      }
+
+      .card {
+        padding: 10px;
+        text-align: center;
+        margin: 0 auto;
+        width: 220px;
+        height: 321px;
+        background: #fff;
+        border-radius: 40px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        box-shadow: 0 14px 26px rgba(0, 0, 0, 0.04);
+        transition: all 0.3s ease-out;
+        text-decoration: none;
+      }
+
+      .card:hover {
+        transform: translateY(-5px) scale(1.005) translateZ(0);
+        box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11),
+          0 24px 46px var(--box-shadow-color);
+      }
+
+      .card:hover .overlay {
+        transform: scale(4) translateZ(0);
+      }
+
+      .card:hover .circle {
+        border-color: var(--bg-color-light);
+        background: var(--bg-color);
+      }
+
+      .card:hover .circle:after {
+        background: var(--bg-color-light);
+      }
+
+      .card:hover p {
+        color: var(--text-color-hover);
+      }
+
+      .card p {
+        font-size: 17px;
+        color: #4c5656;
+        margin-top: 30px;
+        z-index: 3;
+        transition: color 0.3s ease-out;
+      }
+
+      .circle {
+        width: 131px;
+        height: 131px;
+        border-radius: 50%;
+        background: #fff;
+        border: 2px solid var(--bg-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        z-index: 1;
+        transition: all 0.3s ease-out;
+      }
+
+      .circle:after {
+        content: "";
+        width: 118px;
+        height: 118px;
+        display: block;
+        position: absolute;
+        background: var(--bg-color);
+        border-radius: 50%;
+        top: 7px;
+        left: 7px;
+        transition: opacity 0.3s ease-out;
+      }
+
+      .overlay {
+        width: 118px;
+        position: absolute;
+        height: 118px;
+        border-radius: 50%;
+        background: var(--bg-color);
+        top: 70px;
+        left: 50px;
+        z-index: 0;
+        transition: transform 0.3s ease-out;
+      }
+      .f-icon {
+        font-size: 50px;
+        color: white;
+        z-index: 3;
+        transform: translateZ(0);
+      }
+    </style>
+    <section style="background-color: #0d47a1; margin-top: -20px;">
+      <div class="container"
+        style="min-height: 70vh; display: flex; justify-content: center; align-items: center; flex-direction: column;">
+        <div class="row">
+          <h2 style="color: #fff; padding: 10px;">Kenapa Harus Teknik Informatika Universitas Muhammadiyah Jember?</h2>
+        </div>
+        <div class="row">
+          <div class="col-md-4" style="padding: 30px;">
+            <!-- card -->
+            <div class="card inner">
+              <div class="overlay"></div>
+              <div class="circle">
+                <i class="fa-solid fa-computer f-icon"></i>
+              </div>
+              <p>Fasilitas yang lengkap</p>
+            </div>
+            <!-- end -->
+          </div>
+        <div class="col-md-4" style="padding: 30px;">
+          <!-- card -->
+          <div class="card inner">
+            <div class="overlay"></div>
+            <div class="circle">
+              <i class="fa-solid fa-school f-icon"></i>
+            </div>
+            <p>Lingkungan yang nyaman</p>
+          </div>
+          <!-- end -->
+        </div>
+        <div class="col-md-4" style="padding: 30px;">
+          <!-- card -->
+          <div class="card inner">
+            <div class="overlay"></div>
+            <div class="circle">
+              <i class="fa-solid fa-chalkboard-user f-icon"></i>
+            </div>
+            <p>Pengajar yang berkometen</p>
+          </div>
+          <!-- end -->
+        </div>
+      </div>
+      </div>
+    </section>
+    <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 490" xmlns="http://www.w3.org/2000/svg"
+      class="transition duration-300 ease-in-out delay-150">
+      <path
+        d="M 0,500 C 0,500 0,125 0,125 C 47.383951465806675,121.76800867059663 94.76790293161335,118.53601734119327 144,110 C 193.23209706838665,101.46398265880673 244.31233973935338,87.62393930582357 287,83 C 329.6876602606466,78.37606069417643 363.98273811097306,82.96822543551244 410,101 C 456.01726188902694,119.03177456448756 513.7567078167543,150.50315895212668 575,145 C 636.2432921832457,139.49684104787332 700.9904306220096,97.01913875598086 742,89 C 783.0095693779904,80.98086124401914 800.2815696952072,107.42028602394987 839,114 C 877.7184303047928,120.57971397605013 937.883290597161,107.29971714821963 990,100 C 1042.116709402839,92.70028285178037 1086.1852679161489,91.38084538317163 1131,92 C 1175.8147320838511,92.61915461682837 1221.375637738243,95.17690131909382 1273,101 C 1324.624362261757,106.82309868090618 1382.3121811308783,115.91154934045309 1440,125 C 1440,125 1440,500 1440,500 Z"
+        stroke="none" stroke-width="0" fill="#0d47a1" fill-opacity="0.4"
+        class="transition-all duration-300 ease-in-out delay-150 path-0" transform="rotate(-180 720 250)"></path>
+      <path
+        d="M 0,500 C 0,500 0,250 0,250 C 58.1485236194454,260.90693647730575 116.2970472388908,271.81387295461155 158,278 C 199.7029527611092,284.18612704538845 224.96033466388224,285.6514446588596 272,289 C 319.03966533611776,292.3485553411404 387.8616141055804,297.58034840995003 448,294 C 508.1383858944196,290.41965159004997 559.5932089137963,278.0271617013402 597,260 C 634.4067910862037,241.97283829865975 657.7655502392345,218.311004784689 707,206 C 756.2344497607655,193.688995215311 831.344590129266,192.72881915990376 890,216 C 948.655409870734,239.27118084009624 990.856089243702,286.7737185756959 1034,293 C 1077.143910756298,299.2262814243041 1121.2310528959265,264.1763065373126 1171,259 C 1220.7689471040735,253.82369346268737 1276.2196991725925,278.5210552750535 1322,282 C 1367.7803008274075,285.4789447249465 1403.8901504137039,267.73947236247324 1440,250 C 1440,250 1440,500 1440,500 Z"
+        stroke="none" stroke-width="0" fill="#0d47a1" fill-opacity="0.53"
+        class="transition-all duration-300 ease-in-out delay-150 path-1" transform="rotate(-180 720 250)"></path>
+      <path
+        d="M 0,500 C 0,500 0,375 0,375 C 59.600214121441226,358.10191916254723 119.20042824288245,341.2038383250945 168,347 C 216.79957175711755,352.7961616749055 254.79850114991143,381.2865658621692 303,381 C 351.20149885008857,380.7134341378308 409.6055671574718,351.6498982262286 457,347 C 504.3944328425282,342.3501017737714 540.7792302202014,362.11384123291657 579,359 C 617.2207697797986,355.88615876708343 657.2775119617226,329.89473684210526 704,333 C 750.7224880382774,336.10526315789474 804.1107219329086,368.30721139866245 856,390 C 907.8892780670914,411.69278860133755 958.2796003066433,422.87641756324507 1001,410 C 1043.7203996933567,397.12358243675493 1078.7708768405191,360.1871183483571 1134,341 C 1189.2291231594809,321.8128816516429 1264.6368923312805,320.3751090433266 1319,329 C 1373.3631076687195,337.6248909566734 1406.6815538343599,356.3124454783367 1440,375 C 1440,375 1440,500 1440,500 Z"
+        stroke="none" stroke-width="0" fill="#0d47a1" fill-opacity="1"
+        class="transition-all duration-300 ease-in-out delay-150 path-2" transform="rotate(-180 720 250)"></path>
+    </svg>
+    <section>
+
     </section>
   </main>
   <script src="slider.js"></script>
