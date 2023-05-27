@@ -105,6 +105,64 @@
       </div>
     </section>
     <!-- about -->
+    <style>
+      .cta {
+        position: relative;
+        margin: auto;
+        padding: 12px 18px;
+        transition: all 0.2s ease;
+        border: none;
+        background: none;
+      }
+
+      .cta:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        border-radius: 50px;
+        background: #b1dae7;
+        width: 45px;
+        height: 45px;
+        transition: all 0.3s ease;
+      }
+
+      .cta span {
+        position: relative;
+        font-family: "Ubuntu", sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: 0.05em;
+        color: #234567;
+      }
+
+      .cta svg {
+        position: relative;
+        top: 0;
+        margin-left: 10px;
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke: #234567;
+        stroke-width: 2;
+        transform: translateX(-5px);
+        transition: all 0.3s ease;
+      }
+
+      .cta:hover:before {
+        width: 100%;
+        background: #b1dae7;
+      }
+
+      .cta:hover svg {
+        transform: translateX(0);
+      }
+
+      .cta:active {
+        transform: scale(0.95);
+      }
+    </style>
     <section class="about" style="background-color: #f8f8f8 !important;">
       <div class="container" style="min-height: 100vh; display: flex; justify-content: center; align-items: center;">
         <div class="col-md-6" style="padding: 10px 100px;">
@@ -119,7 +177,18 @@
             nam perspiciatis assumenda corporis nostrum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
             tempora non qui, mollitia quasi facilis consectetur voluptates deserunt, optio aspernatur recusandae
             deleniti vero omnis magni, est officiis laboriosam at animi?</p>
+          <div style="text-align: center; margin-top: 20px;">
+            <button class="cta">
+              <span>Lebih Lanjut</span>
+              <svg viewBox="0 0 13 10" height="10px" width="15px">
+                <path d="M1,5 L11,5"></path>
+                <polyline points="8 1 12 5 8 9"></polyline>
+              </svg>
+            </button>
+
+          </div>
         </div>
+
       </div>
     </section>
     <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 490" xmlns="http://www.w3.org/2000/svg"
@@ -233,6 +302,7 @@
         z-index: 0;
         transition: transform 0.3s ease-out;
       }
+
       .f-icon {
         font-size: 50px;
         color: white;
@@ -247,7 +317,7 @@
           <h2 style="color: #fff; padding: 10px;">Kenapa Harus Teknik Informatika Universitas Muhammadiyah Jember?</h2>
         </div>
         <div class="row">
-          <div class="col-md-4" style="padding: 30px;">
+          <div class="col-md-3" style="padding: 30px;">
             <!-- card -->
             <div class="card inner">
               <div class="overlay"></div>
@@ -258,29 +328,40 @@
             </div>
             <!-- end -->
           </div>
-        <div class="col-md-4" style="padding: 30px;">
-          <!-- card -->
-          <div class="card inner">
-            <div class="overlay"></div>
-            <div class="circle">
-              <i class="fa-solid fa-school f-icon"></i>
+          <div class="col-md-3" style="padding: 30px;">
+            <!-- card -->
+            <div class="card inner">
+              <div class="overlay"></div>
+              <div class="circle">
+                <i class="fa-solid fa-school f-icon"></i>
+              </div>
+              <p>Lingkungan yang nyaman</p>
             </div>
-            <p>Lingkungan yang nyaman</p>
+            <!-- end -->
           </div>
-          <!-- end -->
-        </div>
-        <div class="col-md-4" style="padding: 30px;">
-          <!-- card -->
-          <div class="card inner">
-            <div class="overlay"></div>
-            <div class="circle">
-              <i class="fa-solid fa-chalkboard-user f-icon"></i>
+          <div class="col-md-3" style="padding: 30px;">
+            <!-- card -->
+            <div class="card inner">
+              <div class="overlay"></div>
+              <div class="circle">
+                <i class="fa-solid fa-chalkboard-user f-icon"></i>
+              </div>
+              <p>Pengajar yang berkometen</p>
             </div>
-            <p>Pengajar yang berkometen</p>
+            <!-- end -->
           </div>
-          <!-- end -->
+          <div class="col-md-3" style="padding: 30px;">
+            <!-- card -->
+            <div class="card inner">
+              <div class="overlay"></div>
+              <div class="circle">
+                <i class="fa-solid fa-chalkboard-user f-icon"></i>
+              </div>
+              <p>Pengajar yang berkometen</p>
+            </div>
+            <!-- end -->
+          </div>
         </div>
-      </div>
       </div>
     </section>
     <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 490" xmlns="http://www.w3.org/2000/svg"
