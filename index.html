@@ -185,7 +185,6 @@
                 <polyline points="8 1 12 5 8 9"></polyline>
               </svg>
             </button>
-
           </div>
         </div>
 
@@ -379,8 +378,457 @@
         stroke="none" stroke-width="0" fill="#0d47a1" fill-opacity="1"
         class="transition-all duration-300 ease-in-out delay-150 path-2" transform="rotate(-180 720 250)"></path>
     </svg>
-    <section>
+    <style>
+      .blobs-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+      }
 
+      .blob {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        margin: 20px;
+      }
+
+      .blob svg {
+        width: 100%;
+        height: 100%;
+      }
+
+      .blob-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: #ffffff;
+        font-size: 18px;
+      }
+
+      .number {
+        display: block;
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      .language {
+        display: block;
+      }
+
+      /* blob animation 1-8 */
+      #bpath,
+      #bpath2,
+      #bpath3,
+      #bpath4,
+      #bpath5,
+      #bpath6,
+      #bpath7,
+      #bpath8 {
+        fill: #4EA5D9;
+        transition: all 0.3s ease-in-out;
+      }
+
+      .blob:hover #bpath,
+      .blob:hover #bpath2,
+      .blob:hover #bpath3,
+      .blob:hover #bpath4,
+      .blob:hover #bpath5,
+      .blob:hover #bpath6,
+      .blob:hover #bpath7,
+      .blob:hover #bpath8 {
+        fill: #0099ff;
+        transition: all 0.3s ease-in-out;
+      }
+
+
+      @media screen and (max-width: 768px) {
+        .blobs-container {
+          gap: initial;
+        }
+
+        .blob {
+          width: 150px;
+          height: 150px;
+          margin: 0;
+        }
+
+        .number {
+          font-size: 18px;
+        }
+
+        .language {
+          font-size: 14px;
+        }
+      }
+    </style>
+    <!-- bahasa -->
+    <section style="background-color: #f8f8f8;">
+      <div class="container"
+        style="min-height: 70vh; display: flex; justify-content: center; align-items: center; flex-direction: column;">
+        <div class="row">
+          <h2 style="color: #0d47a1; padding: 10px;">Bahasa Pemrograman yang dipelajari</h2>
+        </div>
+        <div class="blobs-container">
+          <!-- blob -->
+          <div class="blob">
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+              <path fill="#0F62FE" id="bpath"
+                d="M41.2,-46.2C56.7,-36,74.8,-26.2,77.8,-13.2C80.8,-0.1,68.6,16.2,56.5,28.3C44.4,40.4,32.4,48.3,18.5,55.3C4.6,62.3,-11.3,68.4,-23.9,64.4C-36.6,60.4,-46.1,46.2,-50.3,32.3C-54.5,18.3,-53.4,4.5,-53,-11.4C-52.7,-27.3,-52.9,-45.4,-44.2,-56.7C-35.5,-68,-17.7,-72.6,-2.5,-69.7C12.8,-66.7,25.7,-56.3,41.2,-46.2Z"
+                transform="translate(100 100)" />
+            </svg>
+            <div class="blob-content">
+              <span class="number">1</span>
+              <span class="language">JavaScript</span>
+            </div>
+          </div>
+          <!-- blob -->
+          <div class="blob">
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+              <path fill="#0F62FE" id="bpath2"
+                d="M38.3,-39.2C53.3,-33.1,71.6,-24.5,78.1,-10.4C84.6,3.7,79.3,23.2,69,38.8C58.7,54.3,43.5,66,26.8,71C10,76,-8.2,74.3,-24,67.8C-39.8,61.2,-53.3,49.9,-58.9,36C-64.5,22.1,-62.3,5.8,-57.3,-7.9C-52.2,-21.5,-44.3,-32.4,-34.2,-39.4C-24.2,-46.5,-12.1,-49.7,-0.2,-49.4C11.6,-49.2,23.3,-45.4,38.3,-39.2Z"
+                transform="translate(100 100)" />
+            </svg>
+            <div class="blob-content">
+              <span class="number">1</span>
+              <span class="language">JavaScript</span>
+            </div>
+          </div>
+          <!-- blob -->
+          <div class="blob">
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+              <path fill="#0F62FE" id="bpath3"
+                d="M51.9,-69.3C66.3,-61,76.3,-44.5,75.7,-28.7C75.2,-12.9,64.2,2.2,57,16.8C49.9,31.5,46.7,45.7,37.9,51.9C29,58.1,14.5,56.3,-0.4,56.8C-15.3,57.4,-30.6,60.2,-45.1,55.9C-59.6,51.5,-73.4,39.9,-75.6,26.2C-77.8,12.5,-68.5,-3.3,-61.6,-18.6C-54.7,-33.9,-50.4,-48.7,-40.6,-58.5C-30.7,-68.3,-15.4,-73.1,1.7,-75.5C18.8,-77.8,37.5,-77.6,51.9,-69.3Z"
+                transform="translate(100 100)" />
+            </svg>
+            <div class="blob-content">
+              <span class="number">1</span>
+              <span class="language">JavaScript</span>
+            </div>
+          </div>
+          <!-- blob -->
+          <div class="blob">
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+              <path fill="#0F62FE" id="bpath4"
+                d="M37,-53.1C45.3,-44.8,47.7,-30.5,53,-16.6C58.3,-2.8,66.5,10.8,66.3,24.7C66.1,38.6,57.5,52.9,45,63.4C32.6,73.8,16.3,80.3,2.2,77.3C-12,74.3,-23.9,61.9,-34.3,50.8C-44.7,39.7,-53.5,30,-55.8,19.1C-58,8.2,-53.6,-3.9,-47.5,-13.2C-41.4,-22.5,-33.7,-29.1,-25.5,-37.4C-17.3,-45.7,-8.6,-55.8,2.8,-59.7C14.3,-63.6,28.6,-61.3,37,-53.1Z"
+                transform="translate(100 100)" />
+            </svg>
+            <div class="blob-content">
+              <span class="number">1</span>
+              <span class="language">JavaScript</span>
+            </div>
+          </div>
+        </div>
+        <div class="blobs-container">
+          <!-- blob -->
+          <div class="blob">
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+              <path fill="#0F62FE" id="bpath5"
+                d="M41.2,-46.2C56.7,-36,74.8,-26.2,77.8,-13.2C80.8,-0.1,68.6,16.2,56.5,28.3C44.4,40.4,32.4,48.3,18.5,55.3C4.6,62.3,-11.3,68.4,-23.9,64.4C-36.6,60.4,-46.1,46.2,-50.3,32.3C-54.5,18.3,-53.4,4.5,-53,-11.4C-52.7,-27.3,-52.9,-45.4,-44.2,-56.7C-35.5,-68,-17.7,-72.6,-2.5,-69.7C12.8,-66.7,25.7,-56.3,41.2,-46.2Z"
+                transform="translate(100 100)" />
+            </svg>
+            <div class="blob-content">
+              <span class="number">1</span>
+              <span class="language">JavaScript</span>
+            </div>
+          </div>
+          <!-- blob -->
+          <div class="blob">
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+              <path fill="#0F62FE" id="bpath6"
+                d="M38.3,-39.2C53.3,-33.1,71.6,-24.5,78.1,-10.4C84.6,3.7,79.3,23.2,69,38.8C58.7,54.3,43.5,66,26.8,71C10,76,-8.2,74.3,-24,67.8C-39.8,61.2,-53.3,49.9,-58.9,36C-64.5,22.1,-62.3,5.8,-57.3,-7.9C-52.2,-21.5,-44.3,-32.4,-34.2,-39.4C-24.2,-46.5,-12.1,-49.7,-0.2,-49.4C11.6,-49.2,23.3,-45.4,38.3,-39.2Z"
+                transform="translate(100 100)" />
+            </svg>
+            <div class="blob-content">
+              <span class="number">1</span>
+              <span class="language">JavaScript</span>
+            </div>
+          </div>
+          <!-- blob -->
+          <div class="blob">
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+              <path fill="#0F62FE" id="bpath7"
+                d="M51.9,-69.3C66.3,-61,76.3,-44.5,75.7,-28.7C75.2,-12.9,64.2,2.2,57,16.8C49.9,31.5,46.7,45.7,37.9,51.9C29,58.1,14.5,56.3,-0.4,56.8C-15.3,57.4,-30.6,60.2,-45.1,55.9C-59.6,51.5,-73.4,39.9,-75.6,26.2C-77.8,12.5,-68.5,-3.3,-61.6,-18.6C-54.7,-33.9,-50.4,-48.7,-40.6,-58.5C-30.7,-68.3,-15.4,-73.1,1.7,-75.5C18.8,-77.8,37.5,-77.6,51.9,-69.3Z"
+                transform="translate(100 100)" />
+            </svg>
+            <div class="blob-content">
+              <span class="number">1</span>
+              <span class="language">JavaScript</span>
+            </div>
+          </div>
+          <!-- blob -->
+          <div class="blob">
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+              <path fill="#0F62FE" id="bpath8"
+                d="M37,-53.1C45.3,-44.8,47.7,-30.5,53,-16.6C58.3,-2.8,66.5,10.8,66.3,24.7C66.1,38.6,57.5,52.9,45,63.4C32.6,73.8,16.3,80.3,2.2,77.3C-12,74.3,-23.9,61.9,-34.3,50.8C-44.7,39.7,-53.5,30,-55.8,19.1C-58,8.2,-53.6,-3.9,-47.5,-13.2C-41.4,-22.5,-33.7,-29.1,-25.5,-37.4C-17.3,-45.7,-8.6,-55.8,2.8,-59.7C14.3,-63.6,28.6,-61.3,37,-53.1Z"
+                transform="translate(100 100)" />
+            </svg>
+            <div class="blob-content">
+              <span class="number">1</span>
+              <span class="language">JavaScript</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 390" xmlns="http://www.w3.org/2000/svg"
+      class="transition duration-300 ease-in-out delay-150">
+      <path
+        d="M 0,400 C 0,400 0,100 0,100 C 24.944825676614613,87.33536466133806 49.889651353229226,74.67072932267612 94,68 C 138.11034864677077,61.32927067732388 201.38622026369768,60.65244737063358 238,66 C 274.6137797363023,71.34755262936642 284.56546759198005,82.7194811947896 312,99 C 339.43453240801995,115.2805188052104 384.35190936838217,136.46962785020804 429,137 C 473.64809063161783,137.53037214979196 518.0268949344912,117.4020074043783 562,100 C 605.9731050655088,82.5979925956217 649.5405108936529,67.92234253227883 685,68 C 720.4594891063471,68.07765746772117 747.8110614908967,82.90862246650637 779,87 C 810.1889385091033,91.09137753349363 845.2152431427604,84.44316760169573 879,78 C 912.7847568572396,71.55683239830427 945.3279659380612,65.31870712671069 982,67 C 1018.6720340619388,68.68129287328931 1059.4728931049947,78.28200389146149 1100,93 C 1140.5271068950053,107.71799610853851 1180.78046164196,127.5532773074433 1223,129 C 1265.21953835804,130.4467226925567 1309.4052603271646,113.50488687876526 1346,109 C 1382.5947396728354,104.49511312123474 1411.5984970493814,112.42717517749564 1426,113 C 1440.4015029506186,113.57282482250436 1440.2007514753093,106.78641241125217 1440,100 C 1440,100 1440,400 1440,400 Z"
+        stroke="none" stroke-width="0" fill="#0d47a1" fill-opacity="0.4"
+        class="transition-all duration-300 ease-in-out delay-150 path-0"></path>
+      <path
+        d="M 0,400 C 0,400 0,200 0,200 C 33.52775551734378,184.29346120550278 67.05551103468756,168.58692241100556 105,163 C 142.94448896531244,157.41307758899444 185.30571137859357,161.9457715614806 218,175 C 250.69428862140643,188.0542284385194 273.72164345093796,209.62999134307205 314,204 C 354.27835654906204,198.37000865692795 411.80771481765476,165.53426306623126 449,170 C 486.19228518234524,174.46573693376874 503.0474972784433,216.23295639200282 536,229 C 568.9525027215567,241.76704360799718 618.0022960685718,225.5339113657575 658,223 C 697.9977039314282,220.4660886342425 728.9433184472691,231.63139814496736 768,223 C 807.0566815527309,214.36860185503264 854.2244301423519,185.94049605437306 889,187 C 923.7755698576481,188.05950394562694 946.1589609833225,218.60661763754032 976,219 C 1005.8410390166775,219.39338236245968 1043.1397259243583,189.6330333954657 1088,176 C 1132.8602740756417,162.3669666045343 1185.2821353192444,164.86124878059684 1227,177 C 1268.7178646807556,189.13875121940316 1299.731732798665,210.921971482147 1337,217 C 1374.268267201335,223.078028517853 1417.7909334860958,213.45086529081516 1436,208 C 1454.2090665139042,202.54913470918484 1447.104533256952,201.27456735459242 1440,200 C 1440,200 1440,400 1440,400 Z"
+        stroke="none" stroke-width="0" fill="#0d47a1" fill-opacity="0.53"
+        class="transition-all duration-300 ease-in-out delay-150 path-1"></path>
+      <path
+        d="M 0,400 C 0,400 0,300 0,300 C 48.02112900893914,298.8455253438959 96.04225801787828,297.69105068779174 131,304 C 165.95774198212172,310.30894931220826 187.85209693742604,324.08132259272884 219,319 C 250.14790306257396,313.91867740727116 290.54935423241744,289.983658941293 334,288 C 377.45064576758256,286.016341058707 423.95048613290413,305.98404164209916 455,305 C 486.04951386709587,304.01595835790084 501.6487012359662,282.08017449031024 536,272 C 570.3512987640338,261.91982550968976 623.454708923231,263.6952603966598 662,265 C 700.545291076769,266.3047396033402 724.5324630711096,267.13878392305054 765,275 C 805.4675369288904,282.86121607694946 862.4154387923304,297.7496039111382 900,296 C 937.5845612076696,294.2503960888618 955.8057817595682,275.86280043239674 992,275 C 1028.1942182404318,274.13719956760326 1082.3614341693974,290.79919435927485 1123,305 C 1163.6385658306026,319.20080564072515 1190.748481562842,330.94042213050363 1222,330 C 1253.251518437158,329.05957786949637 1288.6446395792348,315.43911711871056 1329,308 C 1369.3553604207652,300.56088288128944 1414.6729601202187,299.30310939465414 1434,299 C 1453.3270398797813,298.69689060534586 1446.6635199398906,299.3484453026729 1440,300 C 1440,300 1440,400 1440,400 Z"
+        stroke="none" stroke-width="0" fill="#0d47a1" fill-opacity="1"
+        class="transition-all duration-300 ease-in-out delay-150 path-2"></path>
+    </svg>
+    <style>
+      .row-c {
+        margin: 5px;
+        position: relative;
+      }
+
+      #gallery {
+        display: grid;
+        grid-template: repeat(3, 1fr)/repeat(6, 1fr);
+        grid-gap: 0.5em;
+      }
+
+      @media (max-width: 800px) {
+        #gallery {
+          display: flex;
+          align-items: flex-start;
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+
+        #gallery>div {
+          width: 46%;
+          margin: 1%;
+        }
+      }
+
+      @media (max-width: 800px) and (max-width: 350px) {
+        #gallery>div {
+          width: 98%;
+        }
+      }
+
+      #gallery>div:nth-child(6n+1) {
+        grid-column: span 2;
+        grid-row: span 2;
+      }
+
+      #gallery>div:nth-child(2) {
+        grid-column: span 3;
+        grid-row: span 3;
+      }
+
+      #gallery>div:nth-child(4) {
+        grid-column: span 1;
+        grid-row: span 2;
+      }
+
+      #gallery>div>a {
+        opacity: 0;
+        position: absolute;
+        color: #000;
+        background-color: #000;
+        font: bold 4em "Helvetica";
+        text-shadow: 0 -1px 5px #fff, -1px 0px 5px #fff, 0 1px 5px #fff, 1px 0px 5px #fff;
+        padding: 2rem;
+        mix-blend-mode: difference;
+        width: 100%;
+        height: 100%;
+        transition: all ease 1s;
+      }
+
+      #gallery>div>img {
+        width: 100%;
+        min-height: 100%;
+        transition: all ease 1s;
+      }
+
+      #gallery>div:hover img {
+        filter: blur(4px);
+      }
+
+      #gallery>div:hover a {
+        opacity: 1;
+      }
+
+      #gallery>div {
+        overflow: hidden;
+        position: relative;
+        box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+
+      #gallery div,
+      #gallery a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+      }
+
+      [id^=lightbox-] {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        opacity: 0;
+        transition: opacity 450ms ease-in-out;
+        align-items: center;
+        justify-content: center;
+        pointer-events: none;
+      }
+
+      [id^=lightbox-]:target {
+        opacity: 1;
+        pointer-events: inherit;
+      }
+
+      [id^=lightbox-]:target img {
+        filter: blur(0);
+      }
+
+      [id^=lightbox-] .content {
+        max-width: 90%;
+        position: relative;
+        color: #fff;
+      }
+
+      [id^=lightbox-] .content:hover>a.close {
+        opacity: 1;
+        transform: scale(1, 1);
+      }
+
+      [id^=lightbox-] .content:hover>.title {
+        opacity: 1;
+        transform: translateY(-3px);
+      }
+
+      [id^=lightbox-] .content:hover>.title::after {
+        opacity: 1;
+      }
+
+      [id^=lightbox-] .content>* {
+        transition: all 450ms ease-in-out;
+      }
+
+      [id^=lightbox-] .title {
+        display: block;
+        margin: 0;
+        padding: 1em;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        transform: translateY(50%);
+        font-size: 1.5em;
+        opacity: 0;
+      }
+
+      [id^=lightbox-] .title::after {
+        content: " ";
+        background-color: rgba(0, 0, 0, 0.4);
+        bottom: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        transition: all 350ms ease-in-out 250ms;
+        opacity: 0;
+        transform-origin: bottom;
+        mix-blend-mode: soft-light;
+      }
+
+      [id^=lightbox-] img {
+        max-height: 90vh;
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+        filter: blur(50px);
+      }
+
+      [id^=lightbox-] a.close {
+        width: 2em;
+        height: 2em;
+        position: absolute;
+        right: 0;
+        top: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: scale(0, 0);
+        opacity: 0;
+        transform-origin: right top;
+        text-decoration: none;
+        color: #fff;
+      }
+
+      [id^=lightbox-] a.close::after {
+        content: "X";
+      }
+    </style>
+    <!-- gallery -->
+    <section style="background-color: #0d47a1; margin-top: -10px;">
+      <div class="container-fluid"
+        style="min-height: 70vh; display: flex; justify-content: center; align-items: center; flex-direction: column;">
+        <div class="row" style="margin: 30px;">
+          <h2 style="color: #fff; padding: 10px;">Gallery</h2>
+        </div>
+        <div class="row-c">
+          <div id="gallery">
+            <div><img src="https://picsum.photos/600/600/?image=512" /><a href="#lightbox-1">512</a></div>
+            <div><img src="https://picsum.photos/600/600/?image=513" /><a href="#lightbox-2">513</a></div>
+            <div><img src="https://picsum.photos/600/600/?image=514" /><a href="#lightbox-3">514</a></div>
+            <div><img src="https://picsum.photos/600/600/?image=515" /><a href="#lightbox-4">515</a></div>
+            <div><img src="https://picsum.photos/600/600/?image=516" /><a href="#lightbox-5">516</a></div>
+            <div><img src="https://picsum.photos/600/600/?image=517" /><a href="#lightbox-6">517</a></div>
+          </div>
+          <div class="lightbox" id="lightbox-1">
+            <div class="content"><img src="https://picsum.photos/1920/1080/?image=512" />
+              <div class="title">No. <b>512</b> from Picsum</div><a class="close" href="#gallery"></a>
+            </div>
+          </div>
+          <div class="lightbox" id="lightbox-2">
+            <div class="content"><img src="https://picsum.photos/1920/1080/?image=513" />
+              <div class="title">No. <b>513</b> from Picsum</div><a class="close" href="#gallery"></a>
+            </div>
+          </div>
+          <div class="lightbox" id="lightbox-3">
+            <div class="content"><img src="https://picsum.photos/1920/1080/?image=514" />
+              <div class="title">No. <b>514</b> from Picsum</div><a class="close" href="#gallery"></a>
+            </div>
+          </div>
+          <div class="lightbox" id="lightbox-4">
+            <div class="content"><img src="https://picsum.photos/1920/1080/?image=515" />
+              <div class="title">No. <b>515</b> from Picsum</div><a class="close" href="#gallery"></a>
+            </div>
+          </div>
+          <div class="lightbox" id="lightbox-5">
+            <div class="content"><img src="https://picsum.photos/1920/1080/?image=516" />
+              <div class="title">No. <b>516</b> from Picsum</div><a class="close" href="#gallery"></a>
+            </div>
+          </div>
+          <div class="lightbox" id="lightbox-6">
+            <div class="content"><img src="https://picsum.photos/1920/1080/?image=517" />
+              <div class="title">No. <b>517</b> from Picsum</div><a class="close" href="#gallery"></a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
   <script src="slider.js"></script>

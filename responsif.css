@@ -7,6 +7,10 @@
     box-sizing: border-box;
 }
 
+.container-fluid {
+    width: 100%;
+    box-sizing: border-box;
+}
 /* Grid Columns */
 .col-1 {
     width: 8.3333333333%;
