@@ -48,8 +48,17 @@ nav {
     width: 50%;
 }
 
+li:last-child {
+    border-top : 3px solid #474747;
+    border-bottom : 3px solid #474747;
+    border-right : 3px solid #474747;
+    border-left : 3px solid #474747;
+    border-radius: 7px;
+}
+
 .nav-links li {
     list-style: none;
+    padding: 10px;
 }
 
 .nav-links a {
