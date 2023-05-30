@@ -697,3 +697,25 @@ nav {
     display: inline-block;
     margin-right: 28px;
 }
+
+.jaya {
+    width: 166px;
+    height: 30px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    background-color: #0D47A1;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
