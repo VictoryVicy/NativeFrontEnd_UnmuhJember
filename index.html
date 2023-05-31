@@ -405,24 +405,171 @@
         stroke="none" stroke-width="0" fill="#0d47a1" fill-opacity="1"
         class="transition-all duration-300 ease-in-out delay-150 path-2" transform="rotate(-180 720 200)"></path>
     </svg>
+    <!-- ingfo pendaftaraan -->
+    <style>
+      .card-c {
+        position: relative;
+        top: 2em;
+        width: 12.5em;
+        height: 6.5em;
+        background: white;
+        transition: .4s ease-in-out;
+        border-radius: 15px;
+        box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+        overflow: hidden;
+      }
+
+      .heading {
+        position: relative;
+        color: black;
+        font-weight: bold;
+        font-size: 1.1em;
+        padding-top: 1em;
+        padding-left: 1em;
+        transition: .4s ease-in-out;
+      }
+
+      .details {
+        position: relative;
+        color: black;
+        font-size: 0.6em;
+        padding-top: 1.5em;
+        padding-left: 2em;
+        transition: .4s ease-in-out;
+      }
+
+      .price {
+        position: relative;
+        color: black;
+        font-weight: bold;
+        font-size: 0.8em;
+        padding-top: 1.5em;
+        padding-left: 1.5em;
+        top: 9.6em;
+        left: 5em;
+        transition: .4s ease-in-out;
+      }
+
+      .btn1 {
+        position: relative;
+        border: none;
+        outline: none;
+        background-color: black;
+        color: white;
+        font-size: 0.6em;
+        padding-left: 6.9em;
+        padding-right: 6.9em;
+        padding-top: 0.8em;
+        padding-bottom: 0.85em;
+        border-radius: 10px;
+        left: 2.6em;
+        top: 14.8em;
+        transition: .4s ease-in-out;
+        font-weight: bold;
+      }
+
+      .btn1:hover {
+        background-color: rgb(50, 182, 205);
+        cursor: pointer;
+      }
+
+      .btn2 {
+        position: relative;
+        border: none;
+        outline: none;
+        background-color: black;
+        color: white;
+        font-size: 0.6em;
+        padding-left: 5.1em;
+        padding-right: 5.1em;
+        padding-top: 0.8em;
+        padding-bottom: 0.85em;
+        border-radius: 10px;
+        left: 2.6em;
+        top: 15.5em;
+        transition: .4s ease-in-out;
+        font-weight: bold;
+      }
+
+      .btn2:hover {
+        background-color: rgb(50, 161, 205);
+        cursor: pointer;
+      }
+
+      .glasses {
+        position: relative;
+        top: -3.5em;
+        left: 6em;
+        width: 70px;
+        height: 70px;
+        transition: .4s ease-in-out;
+      }
+
+      .card-c:hover {
+        width: 12.5em; /* 200px */
+        height: 21.7em; /* 350px */
+        transform: translateY(1.25em);
+      }
+
+      .card-c:hover+.glasses {
+        transform: rotateX(360deg);
+        height: 100px;
+        width: 100px;
+        left: 0em;
+        top: -17.5em;
+      }
+
+      .card-c:hover .heading {
+        transform: translateY(7em) translateX(3em);
+      }
+
+      .card-c:hover .details {
+        transform: translateY(13em) translateX(3.1em);
+      }
+    </style>
+    <section style="background-color: #f8f8f8;">
+      <div class="container"
+        style="min-height: 70vh; display: flex; justify-content: center; align-items: center; flex-direction: column;">
+        <div class="row">
+          <div class="col-md-12">
+            <h1 class="text-center">Informasi Pendaftaran</h1>
+            <p>Jalur pendaftaraan dst gtu isinya</p>
+          </div>
+        </div>
+        <div class="row" style="width: 100%; min-height: 400px;">
+          <div class="col-md-6"
+            style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+            <div class="card-c">
+              <div class="heading">PMDK</div>
+              <div class="details">Lorem ipsum dolor sit amet</div>
+              <div class="price">$299</div>
+              <button class="btn2">Add to Cart</button>
+            </div>
+            <div class="glasses">
+              <i class="fa-solid fa-book" style="font-size: 100px;"></i>
+            </div>
+          </div>
+          <div class="col-md-6"
+            style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+            <div class="card-c">
+              <div class="heading">PMDK</div>
+              <div class="details">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+              <div class="price">$299</div>
+              <button class="btn2">Add to Cart</button>
+            </div>
+            <div class="glasses">
+              <i class="fa-solid fa-book" style="font-size: 100px;"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
+  <footer>
+
+  </footer>
   <script src="slider.js"></script>
-  <script>
-    const burger = document.querySelector('.burger');
-    const navLinks = document.querySelector('.nav-links');
-    const nav = document.querySelector('.navbar');
-
-    burger.addEventListener('click', () => {
-      navLinks.classList.toggle('nav-active');
-      burger.classList.toggle('open');
-      nav.classList.toggle('scrolled-mini');
-    });
-
-    window.addEventListener("scroll", function () {
-      const navbar = document.querySelector(".navbar");
-      navbar.classList.toggle("scrolled", window.scrollY > 0);
-    });
-  </script>
+  <script src="script.js"></script>
 
 </body>
 
