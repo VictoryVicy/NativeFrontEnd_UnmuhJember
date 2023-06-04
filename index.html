@@ -59,17 +59,45 @@
       <div class="line"></div>
     </div>
   </nav>
+<style>
+  .slider-content .show {
+  position: relative;
+}
 
+.slider-content .show .img-c::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #0d48a1 0%, rgba(0, 0, 255, 0) 100%);
+  z-index: 1;
+  mix-blend-mode: multiply;
+}
+.img-c {
+  height: 100vh;
+  width: 100% !important;
+}
+.img-c img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.content {
+  z-index: 4;
+}
+</style>
   <main>
     <!-- slider -->
-    <section>
+    <section style="color: white;">
       <div class="container-c">
         <div class="slider">
           <div class="slider-content">
             <figure class="show">
-              <img
-                src="https://images.unsplash.com/photo-1506619216599-9d16d0903dfd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8bWluaW1hbHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=1280&h=720"
-                alt="Coffee">
+              <div class="img-c">
+              <img src="assets/img/bgg/unj.jpg" alt="Coffee">
+              </div>
               <div class="content">
                 <div class="col-md-6"
                   style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
@@ -86,14 +114,12 @@
               </div>
             </figure>
             <figure>
-              <img
-                src="https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fG1pbmltYWx8ZW58MHx8MHx8&auto=format&fit=crop&w=1280&h=720"
-                alt="Lamp">
+              <div class="img-c">
+              <img src="assets/img/bg/2.jpg" alt="Lamp"></div>
             </figure>
             <figure>
-              <img
-                src="https://images.unsplash.com/photo-1546387903-6d82d96ccca6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fG1pbmltYWx8ZW58MHx8MHx8&auto=format&fit=crop&w=1280&h=720"
-                alt="Plant">
+              <div class="img-c">
+              <img src="assets/img/bg/3.jpg" alt="Plant"></div>
             </figure>
           </div>
           <div class="slider-navigation">
@@ -596,17 +622,21 @@
               display: flex;
               align-items: center;
             }
+
             .icon i {
               margin-right: 15px;
             }
+
             .alamat i {
               margin-right: 20px;
             }
+
             .sosmed {
               margin: 20px 0;
             }
+
             .sosmed a {
-              
+
               color: #f8f8f8;
               border-radius: 50%;
               background-color: #033E50;
@@ -614,15 +644,18 @@
             }
           </style>
           <div class="alamat icon">
-            <i class="fas fa-map-marker-alt"></i><p>Jl. Raya Bandung Sumedang KM. 21 Jatinangor</p>
+            <i class="fas fa-map-marker-alt"></i>
+            <p>Jl. Raya Bandung Sumedang KM. 21 Jatinangor</p>
           </div>
           <!-- email -->
           <div class="email icon">
-            <i class="fas fa-envelope"></i><p>ini.email@gmail.com</p>
+            <i class="fas fa-envelope"></i>
+            <p>ini.email@gmail.com</p>
           </div>
           <!-- telp -->
           <div class="telp icon">
-            <i class="fas fa-phone-alt"></i><p>08123456789</p>
+            <i class="fas fa-phone-alt"></i>
+            <p>08123456789</p>
           </div>
           <!-- sosmed -->
           <div class="sosmed">
@@ -632,13 +665,13 @@
             <a href="https://www.youtube.com/channel/UC9Z3Z4ZvX2nX2Z8QZ3Z4ZvX2nX2Z8Q" target="_blank"><i
                 class="fab fa-youtube"></i></a>
           </div>
-          </div>
-          <div class="col-md-4">
-            <!-- copyright -->
-            <p style="text-align: end;">&copy creator 2023</p>
-          </div>
+        </div>
+        <div class="col-md-4">
+          <!-- copyright -->
+          <p style="text-align: end;">&copy creator 2023</p>
         </div>
       </div>
+    </div>
   </footer>
   <script src="slider.js"></script>
   <script src="script.js"></script>

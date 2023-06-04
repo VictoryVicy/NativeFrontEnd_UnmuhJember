@@ -18,6 +18,8 @@ function initListeners() {
 }
 
 function onNavigationClick(e) {
+	clearInterval(autoSlideInterval); // Clear the autoSlideInterval
+
 	var currentButton = e.target;
 	var index = getElementIndex(e.target);
 	var controlledCount = countController(index);
@@ -32,8 +34,11 @@ function onNavigationClick(e) {
 		newSlideItem.classList.add("show");
 		currentButton.classList.remove("disabled");
 		clearInterval(showNextSliderItemInterval);
+
+		startAutoSlide(); // Start the autoSlideInterval again after changing the slide
 	}, 500);
 }
+
 
 function countController(directionIndex) {
 	var result = { new: 0, old: count };
