@@ -200,6 +200,14 @@ nav {
 .desc {
     text-align: justify;
 }
+.desc-p {
+    font-size: 15px;
+    text-align: justify;
+}
+.desc-p2 {
+    font-size: 15px;
+    text-align: justify;
+}
 
 .title {
     font-size: 50px;
