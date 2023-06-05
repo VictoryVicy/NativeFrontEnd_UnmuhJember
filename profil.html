@@ -43,7 +43,7 @@
 
 <body>
   <!-- NAVBAR -->
-  <nav class="navbar">
+  <nav class="navbar" style="z-index: 999;">
     <div class="logo" style="margin-right: 30px;">
       <a href="#">Your Logo</a>
     </div>
@@ -61,15 +61,39 @@
   </nav>
 
   <main>
-    <!-- first -->
-    <section class="about" style="background-color: #f8f8f8 !important;">
-      <div class="container" style="min-height: 100vh; display: flex; justify-content: center; align-items: center;">
-        <div class="col-12">
-          <img src="" alt="">
+    <!-- head -->
+    <style>
+      .img-c::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to right, #0d47a1 0%, rgba(0, 0, 255, 0) 100%);
+        z-index: 1;
+        mix-blend-mode: multiply;
+      }
+
+      .img-c {
+        height: 100vh;
+        width: 100% !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+    <section class="about"
+      style="background-color: #f8f8f8 !important; background-image: url(assets/img/bgg/bgp.jpeg); width: 100%; height: 100%; background-repeat: no-repeat; background-size: cover; color: #fff;">
+      <div class="container-fluid" style="height: 100vh;">
+        <div class="img-c">
+          <h1 class="title" style="z-index: 3;">Profil Program studi</h1>
+          <h1 class="title" style="z-index: 3;">S1 Teknik Informatika</h1>
         </div>
       </div>
     </section>
-    <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 490" xmlns="http://www.w3.org/2000/svg"
+    <!-- <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 490" xmlns="http://www.w3.org/2000/svg"
       class="transition duration-300 ease-in-out delay-150">
       <path
         d="M 0,500 C 0,500 0,125 0,125 C 42.0908430040445,120.22951968066828 84.181686008089,115.45903936133655 128,128 C 171.818313991911,140.54096063866345 217.3640989716884,170.39336223532212 268,166 C 318.6359010283116,161.60663776467788 374.36191810515743,122.96751169737503 432,113 C 489.63808189484257,103.03248830262497 549.188228607682,121.73659097517778 593,119 C 636.811771392318,116.26340902482222 664.8851674641148,92.08612440191388 702,85 C 739.1148325358852,77.91387559808612 785.2711015358589,87.91891141716671 838,101 C 890.7288984641411,114.08108858283329 950.0304263924502,130.23822992941925 1006,132 C 1061.9695736075498,133.76177007058075 1114.6071928943404,121.12816886515634 1167,129 C 1219.3928071056596,136.87183113484366 1271.5408020301884,165.24909460995534 1317,168 C 1362.4591979698116,170.75090539004466 1401.2295989849058,147.87545269502232 1440,125 C 1440,125 1440,500 1440,500 Z"
@@ -83,21 +107,31 @@
         d="M 0,500 C 0,500 0,375 0,375 C 41.794403764307816,382.2990166274551 83.58880752861563,389.59803325491026 135,386 C 186.41119247138437,382.40196674508974 247.43917364984532,367.9068836078141 292,377 C 336.5608263501547,386.0931163921859 364.65449787200305,418.7744323138333 417,418 C 469.34550212799695,417.2255676861667 545.9428348621427,382.9953871368527 594,370 C 642.0571651378573,357.0046128631473 661.5741626794259,365.24401913875596 701,370 C 740.4258373205741,374.75598086124404 799.7605144201538,376.0285363081234 852,375 C 904.2394855798462,373.9714636918766 949.3837796399589,370.6418356287504 996,368 C 1042.616220360041,365.3581643712496 1090.704367020011,363.4041211768749 1143,355 C 1195.295632979989,346.5958788231251 1251.798752279997,331.74167966375 1302,334 C 1352.201247720003,336.25832033625 1396.1006238600016,355.629160168125 1440,375 C 1440,375 1440,500 1440,500 Z"
         stroke="none" stroke-width="0" fill="#0d47a1" fill-opacity="1"
         class="transition-all duration-300 ease-in-out delay-150 path-2"></path>
-    </svg>
+    </svg> -->
     <!-- deskripsi -->
-    <section style="background-color: #0d47a1; margin-top: -20px;">
+    <section style="background-color: #0d47a1;">
       <div class="container"
         style="min-height: 70vh; display: flex; justify-content: center; align-items: center; flex-direction: column;">
         <div class="row">
-          <h2 style="color: #fff; padding: 10px;">Teknik Informatika Universitas Muhammadiyah Jember</h2>
+          <h2 style="color: #fff; padding: 50px;">Teknik Informatika Universitas Muhammadiyah Jember</h2>
         </div>
         <div class="row">
-          <div class="col-md-6" style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
-            <img src="" alt="">
+          <div class="col-md-6"
+            style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+            <img src="assets/img/logo.png" alt="" style="max-height: 300px;">
           </div>
-          <div class="col-md-6" style="display: flex; justify-content: center; align-items: center; flex-direction: column; padding: 20px;">
-            <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores iste officia magni, a excepturi minima facilis, doloribus deleniti blanditiis reprehenderit quisquam nostrum vero! Facere accusamus dolorum in voluptatem eveniet sequi. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi dolore facilis mollitia delectus, excepturi totam nobis unde sit consectetur numquam reiciendis, voluptas temporibus laudantium explicabo repellat, molestiae incidunt! Illo, quia? Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, voluptatum blanditiis minima molestiae ducimus natus omnis autem alias facilis nobis provident doloribus suscipit aspernatur tempore beatae a rerum. Nobis, voluptas.</p>
+          <div class="col-md-6"
+            style="display: flex; justify-content: center; align-items: center; flex-direction: column; padding: 20px;">
+            <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores iste officia magni, a
+              excepturi minima facilis, doloribus deleniti blanditiis reprehenderit quisquam nostrum vero! Facere
+              accusamus dolorum in voluptatem eveniet sequi. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Sequi dolore facilis mollitia delectus, excepturi totam nobis unde sit consectetur numquam reiciendis,
+              voluptas temporibus laudantium explicabo repellat, molestiae incidunt! Illo, quia? Lorem ipsum dolor sit
+              amet consectetur adipisicing elit. Accusamus, voluptatum blanditiis minima molestiae ducimus natus omnis
+              autem alias facilis nobis provident doloribus suscipit aspernatur tempore beatae a rerum. Nobis, voluptas.
+            </p>
           </div>
+        </div>
       </div>
     </section>
     <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 490" xmlns="http://www.w3.org/2000/svg"
@@ -116,10 +150,37 @@
         class="transition-all duration-300 ease-in-out delay-150 path-2" transform="rotate(-180 720 250)"></path>
     </svg>
 
-    <!-- bahasa -->
+    <!-- sambutan ketua jurusan -->
     <section style="background-color: #f8f8f8;">
       <div class="container"
         style="min-height: 70vh; display: flex; justify-content: center; align-items: center; flex-direction: column;">
+        <div class="row">
+          <h2 style="padding: 10px;">Sambutan Ketua Jurusan</h2>
+        </div>
+        <div class="row">
+          <div class="col-md-6"
+            style="display: flex; justify-content: center; align-items: center; flex-direction: column; padding: 30px 50px;">
+            <img src="assets/img/ari.png" alt="" class=" rounded-circle" style="max-height: 300px; max-width: 300px;">
+            <span style="padding-top: 15px;">Ari Eko Wadoyo, S.T., M.Kom</span>
+          </div>
+          <div class="col-md-6"
+            style="display: flex; justify-content: center; align-items: center; flex-direction: column; padding: 20px;">
+            <p class="desc">Assalamu’alaikum wr. wb. Selamat datang di website Program Studi Teknik Informatika
+              Universitas Muhammadiyah Jember.
+              Kami berharap website ini dapat memberikan berbagai informasi seputar program Program Studi Teknik
+              Informatika Universitas Muhammadiyah Jember yang dibutuhkan masyarakat. Program Studi Teknik Informatika
+              Universitas
+              Muhammadiyah Jember sendiri berdiri sejak 19 mei 2008 dengan Nomor SK pendirian: 1640/D/T/2008. Kami
+              berharap seluruh
+              civitas akademika beserta stake holder dapat selalu bekerja sama dalam mencapai tujuan yang nyata. Kami
+              selalu
+              berharap dapat memberikan manfaat seluas-luasnya kepada masyarakat. Kami membuka peluang selebar-lebarnya
+              untuk bekerja
+              sama dan menerima kontak secara lebih dekat melalui media komunikasi yang dapat di akses pada menu
+              Kontak.Terima
+              kasih atas kunjungan Anda. Wassalamu’alaikum wr. wb.</p>
+          </div>
+        </div>
       </div>
     </section>
     <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 390" xmlns="http://www.w3.org/2000/svg"
@@ -137,51 +198,28 @@
         stroke="none" stroke-width="0" fill="#0d47a1" fill-opacity="1"
         class="transition-all duration-300 ease-in-out delay-150 path-2"></path>
     </svg>
-    <!-- gallery -->
+    <!-- visi misi -->
     <section style="background-color: #0d47a1; margin-top: -10px;">
       <div class="container"
-        style="min-height: 70vh; display: flex; justify-content: center; align-items: center; flex-direction: column;">
-        <div class="row" style="margin: 30px;">
-          <h2 style="color: #fff; padding: 10px;">Gallery</h2>
+        style="min-height: 50vh; display: flex; justify-content: center; align-items: center; flex-direction: column;">
+        <div class="row">
+          <h2 style="padding: 10px;">Visi dan Misi</h2>
         </div>
-        <div class="row-c">
-          <div id="gallery">
-            <div><img src="https://picsum.photos/600/600/?image=512" /><a href="#lightbox-1">512</a></div>
-            <div><img src="https://picsum.photos/600/600/?image=513" /><a href="#lightbox-2">513</a></div>
-            <div><img src="https://picsum.photos/600/600/?image=514" /><a href="#lightbox-3">514</a></div>
-            <div><img src="https://picsum.photos/600/600/?image=515" /><a href="#lightbox-4">515</a></div>
-            <div><img src="https://picsum.photos/600/600/?image=516" /><a href="#lightbox-5">516</a></div>
-            <div><img src="https://picsum.photos/600/600/?image=517" /><a href="#lightbox-6">517</a></div>
+        <div class="row">
+          <div class="col-md-6"
+            style="display: flex; justify-content: center; align-items: center; flex-direction: column; padding: 30px">
+            <q class="desc">Menjadi program studi unggul di bidang komputasi cerdas yang berdaya saing di Indonesia
+              bernafaskan nilai-nilai
+              keislaman pada tahun 2030</q>
           </div>
-          <div class="lightbox" id="lightbox-1">
-            <div class="content"><img src="https://picsum.photos/1920/1080/?image=512" />
-              <div class="title">No. <b>512</b> from Picsum</div><a class="close" href="#gallery"></a>
-            </div>
-          </div>
-          <div class="lightbox" id="lightbox-2">
-            <div class="content"><img src="https://picsum.photos/1920/1080/?image=513" />
-              <div class="title">No. <b>513</b> from Picsum</div><a class="close" href="#gallery"></a>
-            </div>
-          </div>
-          <div class="lightbox" id="lightbox-3">
-            <div class="content"><img src="https://picsum.photos/1920/1080/?image=514" />
-              <div class="title">No. <b>514</b> from Picsum</div><a class="close" href="#gallery"></a>
-            </div>
-          </div>
-          <div class="lightbox" id="lightbox-4">
-            <div class="content"><img src="https://picsum.photos/1920/1080/?image=515" />
-              <div class="title">No. <b>515</b> from Picsum</div><a class="close" href="#gallery"></a>
-            </div>
-          </div>
-          <div class="lightbox" id="lightbox-5">
-            <div class="content"><img src="https://picsum.photos/1920/1080/?image=516" />
-              <div class="title">No. <b>516</b> from Picsum</div><a class="close" href="#gallery"></a>
-            </div>
-          </div>
-          <div class="lightbox" id="lightbox-6">
-            <div class="content"><img src="https://picsum.photos/1920/1080/?image=517" />
-              <div class="title">No. <b>517</b> from Picsum</div><a class="close" href="#gallery"></a>
-            </div>
+          <div class="col-md-6"
+            style="display: flex; justify-content: center; align-items: center; flex-direction: column; padding: 30px;">
+            <ol class="desc">
+              <li>Menyelenggarakan pendidikan dan pengajaran bidang komputasi cerdas</li>
+              <li>Menyelenggarakan penelitian dan pengabdian masyarakat bidang komputasi.</li>
+              <li>Menyelenggarakan kerjasama di tingkat regional, nasional, dan internasional.</li>
+              <li>Menyelenggarakan Al Islam dan kemuhammadiyahan berbasis informatika bidang komputasi cerdas.</li>
+            </ol>
           </div>
         </div>
       </div>
@@ -201,166 +239,29 @@
         stroke="none" stroke-width="0" fill="#0d47a1" fill-opacity="1"
         class="transition-all duration-300 ease-in-out delay-150 path-2" transform="rotate(-180 720 200)"></path>
     </svg>
-    <!-- ingfo pendaftaraan -->
-    <style>
-      .card-c {
-        position: relative;
-        top: 2em;
-        width: 14em;
-        height: 6.5em;
-        background: white;
-        transition: .4s ease-in-out;
-        border-radius: 15px;
-        box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
-        overflow: hidden;
-      }
-
-      .details {
-        position: relative;
-        color: black;
-        font-size: 0.6em;
-        padding-top: 1.5em;
-        padding-left: 2em;
-        transition: .4s ease-in-out;
-      }
-
-      .heading {
-        position: relative;
-        color: black;
-        font-weight: bold;
-        font-size: 1.1em;
-        padding-top: 1em;
-        padding-left: 1em;
-        transition: .4s ease-in-out;
-      }
-
-      .price {
-        position: relative;
-        color: black;
-        font-size: 0.8em;
-        padding-top: 1.5em;
-        top: 9.6em;
-        padding: 0 10px;
-        text-align: justify;
-        transition: .4s ease-in-out;
-      }
-
-      .btn1 {
-        position: relative;
-        border: none;
-        outline: none;
-        background-color: black;
-        color: white;
-        font-size: 0.6em;
-        padding-left: 6.9em;
-        padding-right: 6.9em;
-        padding-top: 0.8em;
-        padding-bottom: 0.85em;
-        border-radius: 10px;
-        left: 2.6em;
-        top: 14.8em;
-        transition: .4s ease-in-out;
-        font-weight: bold;
-      }
-
-      .btn1:hover {
-        background-color: rgb(50, 182, 205);
-        cursor: pointer;
-      }
-
-      .btn2 {
-        position: relative;
-        border: none;
-        outline: none;
-        background-color: black;
-        color: white;
-        font-size: 0.6em;
-        padding-left: 5.1em;
-        padding-right: 5.1em;
-        padding-top: 0.8em;
-        padding-bottom: 0.85em;
-        border-radius: 10px;
-        left: 3.6em;
-        top: 13.5em;
-        transition: .4s ease-in-out;
-        font-weight: bold;
-      }
-
-      .btn2:hover {
-        background-color: rgb(50, 161, 205);
-        cursor: pointer;
-      }
-
-      .glasses {
-        position: relative;
-        top: -3.5em;
-        left: 6em;
-        width: 70px;
-        height: 70px;
-        transition: .4s ease-in-out;
-      }
-
-      .card-c:hover {
-        width: 13.5em;
-        /* 200px */
-        height: 22.7em;
-        /* 350px */
-        transform: translateY(1.25em);
-      }
-
-      .card-c:hover+.glasses {
-        transform: rotateX(360deg);
-        height: 100px;
-        width: 100px;
-        left: 0.3em;
-        top: -17.5em;
-      }
-
-      .card-c:hover .heading {
-        transform: translateY(7em) translateX(3.5em);
-      }
-
-      .card-c:hover .details {
-        transform: translateY(11em) translateX(6em);
-      }
-    </style>
+    <!-- akreditasi -->
     <section style="background-color: #f8f8f8;">
       <div class="container"
-        style="min-height: 70vh; display: flex; justify-content: center; align-items: center; flex-direction: column;">
+        style="min-height: 50vh; display: flex; justify-content: center; align-items: center; flex-direction: column;">
         <div class="row">
-          <div class="col-md-12">
-            <h1 class="text-center">Informasi Pendaftaran</h1>
-            <p>Jalur pendaftaraan dst gtu isinya</p>
-          </div>
+          <h2 style="padding: 10px;">Akreditasi</h2>
+
         </div>
-        <div class="row" style="width: 100%; min-height: 500px;">
-          <div class="col-md-6"
-            style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
-            <div class="card-c">
-              <div class="heading">PMDK</div>
-              <div class="details">(orang dalam)</div>
-              <div class="price">SMP TM merupakan seleksi masuk perguruan tinggi di universitas muhammadiyah jember. SMP
-                TM sendiri merupakan kepanjangan
-                dari Seleksi Masuk Perguruan Tinggi Muhammadiyah.</div>
-              <button class="btn2">Add to Cart</button>
-            </div>
-            <div class="glasses">
-              <i class="fa-solid fa-book" style="font-size: 100px;"></i>
-            </div>
-          </div>
-          <div class="col-md-6"
-            style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
-            <div class="card-c">
-              <div class="heading">SMPTM</div>
-              <div class="details">(orang dalam)</div>
-              <div class="price">SMP TM merupakan seleksi masuk perguruan tinggi di universitas muhammadiyah jember. SMP
-                TM sendiri
-                merupakan kepanjangan dari Seleksi Masuk Perguruan Tinggi Muhammadiyah.</div>
-              <button class="btn2">Add to Cart</button>
-            </div>
-            <div class="glasses">
-              <i class="fa-solid fa-book" style="font-size: 100px;"></i>
-            </div>
+        <div class="row">
+          <div class="col-md-12"
+            style="display: flex; justify-content: center; align-items: center; flex-direction: column; padding: 30px">
+            <p>Akreditasi Program Studi Teknik Informatika adalah B sesuai dengan no SK Ban PT
+              2429/SK/BAN-PT/Akred/S/IX/2018</p>
+            <p> dokumen SK dan Sertifikat Akreditasi (Berlaku untuk tahun lululsan 2012 ke atas)</p>
+                      <div style="text-align: center; margin-top: 20px;">
+                        <button class="cta">
+                          <span>Lihat dokumen</span>
+                          <svg viewBox="0 0 13 10" height="10px" width="15px">
+                            <path d="M1,5 L11,5"></path>
+                            <polyline points="8 1 12 5 8 9"></polyline>
+                          </svg>
+                        </button>
+                      </div>
           </div>
         </div>
       </div>
