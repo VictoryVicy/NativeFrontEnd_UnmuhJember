@@ -4,6 +4,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* outline: 1px solid red; */
+
 }
 
 body {
@@ -98,7 +100,14 @@ nav {
     -ms-transition: all 0.5s ease-in-out !important;
     -o-transition: all 0.5s ease-in-out !important;
 }
+
 @media screen and (max-width: 768px) {
+    .nav-links a {
+        position: relative;
+        text-decoration: none;
+        color: #000000;
+    }
+
     nav {
         display: flex;
         justify-content: space-between;
@@ -185,6 +194,8 @@ nav {
     .burger.open .line:nth-child(3) {
         transform: rotate(45deg) translate(-6px, -6px);
     }
+
+
 }
 
 
@@ -200,19 +211,46 @@ nav {
 .desc {
     text-align: justify;
 }
+
 .desc-p {
     font-size: 15px;
     text-align: justify;
 }
+
 .desc-p2 {
     font-size: 15px;
     text-align: justify;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Potta+One&family=Ubuntu:wght@300;400;500;700&display=swap');
+
 .title {
-    font-size: 50px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 70px;
     font-weight: 700;
     margin-bottom: 20px;
+}
+
+.sub-title {
+    color: #FFB703;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    .title {
+        font-size: 50px;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+
+    .sub-title {
+        color: #FFB703;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+    }
 }
 
 /* button */

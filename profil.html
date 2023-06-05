@@ -82,15 +82,27 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
+      }
+      .heading {
+        padding-bottom: 0;
+        padding-left: 50px;
+      }
+      @media screen and (max-width: 768px) {
+        .heading {
+          padding-bottom: 35vh;
+          padding-left: 10px;
+        }
       }
     </style>
     <section class="about"
       style="background-color: #f8f8f8 !important; background-image: url(assets/img/bgg/bgp.jpeg); width: 100%; height: 100%; background-repeat: no-repeat; background-size: cover; color: #fff;">
-      <div class="container-fluid" style="height: 100vh;">
+      <div class="container-fluid" style="height: 100vh; ">
         <div class="img-c">
-          <h1 class="title" style="z-index: 3;">Profil Program studi</h1>
-          <h1 class="title" style="z-index: 3;">S1 Teknik Informatika</h1>
+          <div style="z-index: 3;" class="heading">
+            <h1 class="title">Profil dan dekskripsi</h1>
+            <p class="sub-title">Teknik Informatika</p>
+          </div>
         </div>
       </div>
     </section>
@@ -254,15 +266,15 @@
             <p>Akreditasi Program Studi Teknik Informatika adalah B sesuai dengan no SK Ban PT
               2429/SK/BAN-PT/Akred/S/IX/2018</p>
             <p> dokumen SK dan Sertifikat Akreditasi (Berlaku untuk tahun lululsan 2012 ke atas)</p>
-                      <div style="text-align: center; margin-top: 20px;">
-                        <button class="cta">
-                          <span>Lihat dokumen</span>
-                          <svg viewBox="0 0 13 10" height="10px" width="15px">
-                            <path d="M1,5 L11,5"></path>
-                            <polyline points="8 1 12 5 8 9"></polyline>
-                          </svg>
-                        </button>
-                      </div>
+            <div style="text-align: center; margin-top: 20px;">
+              <button class="cta">
+                <span>Lihat dokumen</span>
+                <svg viewBox="0 0 13 10" height="10px" width="15px">
+                  <path d="M1,5 L11,5"></path>
+                  <polyline points="8 1 12 5 8 9"></polyline>
+                </svg>
+              </button>
+            </div>
           </div>
         </div>
       </div>
