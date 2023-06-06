@@ -1033,22 +1033,26 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .modal-container {
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     position: fixed;
     top: 0;
     left: 0;
     opacity: 0;
-    pointer-events: none;
     height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.3);
-    transition: opacity 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
     z-index: 9999;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
 }
 
-.modal-container.show {
+.modal-container.show-m {
+    display: flex;
     opacity: 1;
     pointer-events: auto;
 }
@@ -1056,7 +1060,6 @@ h1, h2, h3, h4, h5, h6 {
 .modal {
     background-color: #fff;
      width: 600px;
-     max-width: 100%;
      padding: 30px 50px;
      border-radius: 5px;
      box-shadow: rgba(0, 0, 0, 0.2);
