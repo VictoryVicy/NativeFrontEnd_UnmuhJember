@@ -209,6 +209,10 @@ nav {
 }
 
 /* ! text */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+}
 .desc {
     text-align: justify;
 }
@@ -1131,14 +1135,6 @@ nav {
     left: 50%;
 }
 
-.fa-solid {
-    position: absolute;
-    width: 40px;
-    border-radius: 50%;
-    right: 20px;
-    top: 32px;
-    z-index: 10;
-}
 
 .right-container .fa-solid {
     left: 85%;
