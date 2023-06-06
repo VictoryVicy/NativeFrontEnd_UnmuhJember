@@ -54,10 +54,10 @@
       <a href="#">Your Logo</a>
     </div>
     <ul class="nav-links">
-      <li><a href="/">Beranda</a></li>
-      <li><a href="profil.html">Tentang kami</a></li>
-      <li><a href="prestasi.html">Prestasi</a></li>
-      <li><a href="forkafest.html">Forkafest</a></li>
+      <li><a href="/" style="color: #0d47a1;">Beranda</a></li>
+      <li><a href="profil.html" style="color: #0d47a1;">Tentang kami</a></li>
+      <li><a href="prestasi.html" style="color: #0d47a1;">Prestasi</a></li>
+      <li><a href="forkafest.html" style="color: #0d47a1;">Forkafest</a></li>
     </ul>
     <div class="burger">
       <div class="line"></div>
@@ -357,22 +357,7 @@
         class="transition-all duration-300 ease-in-out delay-150 path-2" transform="rotate(-180 720 200)"></path>
     </svg>
   </main>
-  <script>
-    const burger = document.querySelector('.burger');
-    const navLinks = document.querySelector('.nav-links');
-    const nav = document.querySelector('.navbar');
-
-    burger.addEventListener('click', () => {
-      navLinks.classList.toggle('nav-active');
-      burger.classList.toggle('open');
-      nav.classList.toggle('scrolled-mini');
-    });
-
-    window.addEventListener("scroll", function () {
-      const navbar = document.querySelector(".navbar");
-      navbar.classList.toggle("scrolled", window.scrollY > 0);
-    });
-  </script>
+  <script src="script.js"></script>
   <script type="text/javascript" src="model.js"></script>
 </body>
 
