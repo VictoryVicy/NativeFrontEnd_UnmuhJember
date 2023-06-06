@@ -149,7 +149,7 @@ nav {
         -moz-border-radius: 0 0 40px 40px !important;
         -ms-border-radius: 0 0 40px 40px !important;
         -o-border-radius: 0 0 40px 40px !important;
-        box-shadow:  2px 10px 10px rgba(0, 0, 0, 0.2);
+        box-shadow: 2px 10px 10px rgba(0, 0, 0, 0.2);
     }
 
     .nav-links.nav-active {
@@ -197,7 +197,6 @@ nav {
         transform: rotate(45deg) translate(-6px, -6px);
     }
 
-
 }
 
 
@@ -225,6 +224,7 @@ nav {
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Potta+One&family=Ubuntu:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mina:wght@700&display=swap');
 
 .title {
     font-family: 'Ubuntu', sans-serif;
@@ -272,7 +272,7 @@ nav {
     left: 0;
     display: block;
     border-radius: 50px;
-    background: #b1dae7;
+    background: #FFB703;
     width: 45px;
     height: 45px;
     transition: all 0.3s ease;
@@ -302,7 +302,7 @@ nav {
 
 .cta:hover:before {
     width: 100%;
-    background: #b1dae7;
+    background: #FFB703;
 }
 
 .cta:hover svg {
@@ -320,6 +320,13 @@ nav {
     --text-color-hover: #fff;
     --box-shadow-color: #4ea6d96c;
 }
+
+/* .inner {
+    --bg-color: #FFB703;
+    --bg-color-light: #ffd774;
+    --text-color-hover: #fff;
+    --box-shadow-color: #4ea6d96c;
+} */
 
 .card {
     padding: 10px;
@@ -438,10 +445,73 @@ nav {
     height: 100%;
 }
 
-.blob-content {
+.blob-content1 {
+    position: absolute;
+    top: 45%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffffff;
+    font-size: 18px;
+}
+.blob-content2 {
+    position: absolute;
+    top: 54%;
+    left: 54%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffffff;
+    font-size: 18px;
+}
+.blob-content3 {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffffff;
+    font-size: 18px;
+}
+.blob-content4 {
+    position: absolute;
+    top: 53%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffffff;
+    font-size: 18px;
+}
+.blob-content5 {
     position: absolute;
     top: 50%;
     left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffffff;
+    font-size: 18px;
+}
+.blob-content6 {
+    position: absolute;
+    top: 55%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffffff;
+    font-size: 18px;
+}
+.blob-content7 {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffffff;
+    font-size: 18px;
+}
+.blob-content8 {
+    position: absolute;
+    top: 53%;
+    left: 53%;
     transform: translate(-50%, -50%);
     text-align: center;
     color: #ffffff;
