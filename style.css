@@ -424,24 +424,6 @@ h1, h2, h3, h4, h5, h6 {
     --box-shadow-color: #842ee76c;
 }
 
-.sutter4 {
-    --bg-color-light: #11bc58;
-    --text-color-hover: #2bff2b;
-    --box-shadow-color: #14ea3b6c;
-}
-
-.sutter5 {
-    --bg-color-light: #9317da;
-    --text-color-hover: #9318d1;
-    --box-shadow-color: #842ee76c;
-}
-
-.sutter6 {
-    --bg-color-light: #d12828;
-    --text-color-hover: #ec4040;
-    --box-shadow-color: #fc2b2b6c;
-}
-
 /* .inner {
     --bg-color: #FFB703;
     --bg-color-light: #ffd774;
