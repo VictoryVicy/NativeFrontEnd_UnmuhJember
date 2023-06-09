@@ -54,7 +54,7 @@
       <a href="#">Your Logo</a>
     </div>
     <ul class="nav-links">
-      <li><a href="/" style="color: #0d47a1;">Beranda</a></li>
+      <li><a href="index.html" style="color: #0d47a1;">Beranda</a></li>
       <li><a href="profil.html" style="color: #0d47a1;">Tentang kami</a></li>
       <li><a href="prestasi.html" style="color: #0d47a1;">Prestasi</a></li>
       <li><a href="forkafest.html" style="color: #0d47a1;">Forkafest</a></li>
@@ -76,50 +76,6 @@
           <div class="col-md-6">
             <h1 class="forkafest">Forkafest 2023</h1>
             <div id="countdown" class="time-content">
-              <script>
-                const targetDate = new Date('2023-06-25');
-
-                setInterval(updateCountdown, 1000);
-
-                function updateCountdown() {
-                  const now = new Date();
-                  const timeDifference = targetDate - now;
-
-                  const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
-                  const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                  const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
-                  const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
-
-                  const formattedDays = String(days).padStart(2, '0');
-                  const formattedHours = String(hours).padStart(2, '0');
-                  const formattedMinutes = String(minutes).padStart(2, '0');
-                  const formattedSeconds = String(seconds).padStart(2, '0');
-
-                  document.getElementById('countdown').innerHTML = `
-                   <div class="time days">
-                    <span class="angka">${formattedDays}</span>
-                    <span class="teksis">Days</span>
-                  </div>
-                  <div class="time hours">
-                    <span class="angka">${formattedHours}</span>
-                    <span class="teksis">Hours</span>
-                  </div>
-                  <div class="time minutes">
-                    <span class="angka">${formattedMinutes}</span>
-                    <span class="teksis">Minutes</span>
-                  </div>
-                  <div class="time seconds">
-                    <span class="angka">${formattedSeconds}</span>
-                    <span class="teksis">Second</span>
-                   </div>`;
-
-
-                  if (timeDifference < 0) {
-                    clearInterval(updateCountdown);
-                    document.getElementById('countdown').innerHTML = "Pengumuman Juara !";
-                  }
-                }
-              </script>
             </div>
             <p class="forkafest-sub">"Meningkatkan kreativitas generasi muda dengan teknologi digital dalam menghadapi
               era society 5.0"</p>
@@ -168,11 +124,7 @@
           <p style="font-family: 'Mukta', sans-serif;">ForkaFest (Informatika Festival) adalah sebuah festival yang
             berkaitan dengan bidang informatika. Festival ini dirancang untuk menyatukan para profesional, penggiat, dan
             pecinta informatika untuk merayakan dan mengapresiasi perkembangan terbaru dalam dunia teknologi dan
-            komputasi. Tak hanya tentang informatika, perlombaan dalam ForkaFest juga ada kompetisi E-Sport dan
-            selengkapnya dapat dilihat pada bagian rangkaian kegiatan. ForkaFest 2023 akan mengangkat tema “Meningkatkan
-            kreativitas generasi muda dengan teknologi digital dalam menghadapi era society 5.0”. Tema ini dipilih untuk
-            mengajak generasi muda untuk lebih kreatif dalam menghadapi era society 5.0 yang merupakan era dimana
-            manusia dan teknologi saling berinteraksi dan saling mempengaruhi.</p>
+            komputasi. </p>
         </div>
         <div class="col-md-12" style="text-align: center; margin-top: 75px;">
           <img src="assets/img/winner.svg" alt="forkafest" class="img-fluid" style="width: 50%; height: 50%;">
@@ -281,7 +233,7 @@
       <div class="modal-container" id="modal_container1">
         <div class="modal">
           <h1>PUBG MOBILE</h1>
-          <p>HUMANIKA Unmuh Jember PROUDLY PRESENT FORKAFEST 3.0 PUBG MOBILE. Hai Gamers, Yuk ikut lomba PUBG Mobile 
+          <p class="desc" style="padding: 20px 0;">HUMANIKA Unmuh Jember PROUDLY PRESENT FORKAFEST 3.0 PUBG MOBILE. Hai Gamers, Yuk ikut lomba PUBG Mobile 
             dalam mengembangkan bakat dan minat para pemain PUBG. Tema : "The Dreams of Teamwork"</p>
           <button class="iyadong" id="close1">Close</button>
         </div>
@@ -292,7 +244,7 @@
       <div class="modal-container" id="modal_container2">
         <div class="modal">
           <h1>MOBILE LEGEND</h1>
-          <p>HUMANIKA Unmuh Jember PROUDLY PRESENT FORKAFEST 3.0 PUBG MOBILE. Hai Gamers, Yuk ikut lomba Mobile
+          <p class="desc" style="padding: 20px 0;">HUMANIKA Unmuh Jember PROUDLY PRESENT FORKAFEST 3.0 PUBG MOBILE. Hai Gamers, Yuk ikut lomba Mobile
             Legend dalam mengembangkan bakat dan minat para pemain ML. Tema : "Moment of Win"</p>
           <button class="iyadong" id="close2" style="background-color: #2bff2b;">Close</button>
         </div>
@@ -303,7 +255,7 @@
       <div class="modal-container" id="modal_container3">
         <div class="modal">
           <h1>DESAIN UI/UX</h1>
-          <p>HUMANIKA Unmuh Jember PROUDLY PRESENT FORKAFEST 3.0 DESAIN UI/UX. Hai Designers, Yuk ikut lomba Desain UI/UX
+          <p class="desc" style="padding: 20px 0;">HUMANIKA Unmuh Jember PROUDLY PRESENT FORKAFEST 3.0 DESAIN UI/UX. Hai Designers, Yuk ikut lomba Desain UI/UX
             dalam mengapresiasi karya pelajar dan mahasiswa untuk mewujudkan mimpi.
             Tema : "Meningkatkan kreativitas generasi muda dengan teknologi digital dalam menghadapi era society 5.0"</p>
           <button class="iyadong" id="close3" style="background-color: #9318d1;">Close</button>
@@ -315,7 +267,7 @@
       <div class="modal-container" id="modal_container4">
         <div class="modal">
           <h1>CYBER SECURITY</h1>
-          <p>HUMANIKA Unmuh Jember PROUDLY PRESENT FORKAFEST 3.0 CYBER SECURITY. Hello guys, Yuk ikut lomba CRYPTOGRAPHIC
+          <p class="desc" style="padding: 20px 0;">HUMANIKA Unmuh Jember PROUDLY PRESENT FORKAFEST 3.0 CYBER SECURITY. Hello guys, Yuk ikut lomba CRYPTOGRAPHIC
             sebagai ajang untuk meningkatkan pengalaman di bidang KEAMANAN INFORMASI.
             Tema : "Bersatu Membangun Peradaban Digital Yang Cerdas, Beradab, dan Berbudaya"
           </p>
@@ -328,7 +280,7 @@
       <div class="modal-container" id="modal_container5">
         <div class="modal">
           <h1>WEB DEVELOPMENT</h1>
-          <p>HUMANIKA Unmuh Jember PROUDLY PRESENT FORKAFEST 3.0 WEB DEVELOPMENT. Hello guys, Yuk ikut lomba Web Development
+          <p class="desc" style="padding: 20px 0;">HUMANIKA Unmuh Jember PROUDLY PRESENT FORKAFEST 3.0 WEB DEVELOPMENT. Hello guys, Yuk ikut lomba Web Development
             sebagai ajang untuk meningkatkan pengalaman di bidang Website Development.
             Tema : "To Get Better in Developing"
           </p>
@@ -341,7 +293,7 @@
       <div class="modal-container" id="modal_container6">
         <div class="modal">
           <h1>COMPUTER NETWORK</h1>
-          <p>HUMANIKA Unmuh Jember PROUDLY PRESENT FORKAFEST 3.0 COMPUTER NETWORK. Whats up guys, Yuk ikut lomba Computer Network
+          <p class="desc" style="padding: 20px 0;">HUMANIKA Unmuh Jember PROUDLY PRESENT FORKAFEST 3.0 COMPUTER NETWORK. Whats up guys, Yuk ikut lomba Computer Network
             sebagai ajang untuk meningkatkan pengalaman di bidang Networking.
             Tema : "Explore the World With Internet"</p>
           <button class="iyadong" id="close6">Close</button>

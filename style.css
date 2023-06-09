@@ -1013,6 +1013,32 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: capitalize;
 }
 
+@media (max-width: 800px) {
+
+    .time .angka {
+        font-size: 30px;
+        line-height: 45px;
+        font-size: normal;
+    }
+
+    .time .teksis {
+        font-size: 14px;
+        line-height: 15px;
+        font-size: normal;
+        text-transform: capitalize;
+    }
+
+    .time-content {
+        column-gap: 15px;
+    }
+    .forkafest-sub{
+        padding-top: 30px;
+        font-size: 18px !important;
+    }
+}
+
+
+
 .brothree {
     font-family: 'Lilita One', cursive;
 }
@@ -1071,11 +1097,15 @@ h1, h2, h3, h4, h5, h6 {
 
 .modal {
     background-color: #fff;
-    width: 600px;
-    padding: 30px 50px;
-    border-radius: 5px;
+    width: 400px;
+    padding: 30px;
+    border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.2);
     text-align: center;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 
 .modal h1 {
