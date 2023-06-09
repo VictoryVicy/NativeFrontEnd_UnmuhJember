@@ -999,6 +999,14 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     column-gap: 30px;
     align-items: center;
+    font-family: 'Lilita One', cursive;
+    background: linear-gradient(270deg, #f1f6fd 50%, #104EAD 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    background-size: 200%;
+    color: transparent;
+    
 }
 
 .time {
