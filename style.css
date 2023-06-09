@@ -208,6 +208,19 @@ nav {
     object-position: center;
 }
 
+/* aos animation */
+.aos {
+    opacity: 0;
+    transform: translateY(300px);
+    transition: transform 0.5s ease-out, opacity 0.1s ease-out;
+}
+
+/* Add a CSS class to define the animated state of the element */
+.aos.animate {
+    opacity: 1 !important;
+    transform: translateY(0%) !important;
+}
+
 /* ! text */
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Ubuntu', sans-serif;
@@ -1012,10 +1025,12 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: capitalize;
 }
 
+
 @media (max-width: 800px) {
     .forkafest {
         font-size: 70px;
     }
+
     .time .angka {
         font-size: 30px;
         line-height: 45px;
@@ -1032,7 +1047,8 @@ h1, h2, h3, h4, h5, h6 {
     .time-content {
         column-gap: 15px;
     }
-    .forkafest-sub{
+
+    .forkafest-sub {
         padding-top: 30px;
         font-size: 18px !important;
     }
