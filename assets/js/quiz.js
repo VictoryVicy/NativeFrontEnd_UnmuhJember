@@ -1,6 +1,6 @@
 const questions = [
     {
-        question : "Apa kepanjangan dari HTML?",
+        question : "Apa kepanjangan dari HTML?PEMBEDA HAPUS AJA",
         optionA : "Hyper Text Markup Language",
         optionB : "Hyper Text Multiple Language",
         optionC : "Hyper Tool Multi Language",
