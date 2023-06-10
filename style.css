@@ -32,7 +32,7 @@ nav {
     left: 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     background-color: #f8f8f800;
     padding: 20px;
@@ -1006,7 +1006,7 @@ h1, h2, h3, h4, h5, h6 {
     background-clip: text;
     background-size: 200%;
     color: transparent;
-    
+
 }
 
 .time {
@@ -1544,8 +1544,8 @@ input[type="radio"] {
     position: relative;
 }
 
-input[type="radio"]:checked ~ .option {
-   background: paleturquoise;
+input[type="radio"]:checked~.option {
+    background: paleturquoise;
 }
 
 .next-button-container {
@@ -1571,6 +1571,21 @@ input[type="radio"]:checked ~ .option {
     background-color: rgb(143, 93, 93);
 }
 
+.score-content-container {
+    width: 80%;
+    height: 18rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
 .score-modal-container {
     display: none;
     position: fixed;
@@ -1650,26 +1665,33 @@ input[type="radio"]:checked ~ .option {
         width: 90%;
         height: 80vh;
     }
+
     .game-details-container {
         font-size: 0.8rem;
     }
+
     .game-question-container {
         height: 6rem;
     }
+
     .game-question-container h1 {
         font-size: 0.9rem;
     }
+
     .game-options-container .spanspan {
         width: 90%;
         height: 2.5rem;
     }
+
     .game-options-container .spanspan label {
         font-size: 0.8rem;
     }
+
     .modal-content-container {
         width: 90%;
         height: 25rem;
     }
+
     .modal-content-container h1 {
         font-size: 1.2rem;
     }
@@ -1680,25 +1702,52 @@ input[type="radio"]:checked ~ .option {
         width: 90%;
         height: 80vh;
     }
+
     .game-details-container {
         font-size: 1rem;
     }
+
     .game-question-container {
         height: 8rem;
     }
+
     .game-question-container h1 {
         font-size: 0.9rem;
     }
+
     .game-options-container .spanspan {
         width: 90%;
     }
+
     .modal-content-container {
         width: 90%;
         height: 25rem;
     }
+
     .modal-content-container h1 {
         font-size: 1.2rem;
     }
 }
 
-.tiga{}
+/*  back button  */
+.back-button-container {
+    padding: 10px;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    width: 5rem;
+    height: 5rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.back-button-container:hover {
+    -ms-transform: scale(1.12);
+    -webkit-transform: scale(1.12);
+    transform: scale(1.12);
+}
