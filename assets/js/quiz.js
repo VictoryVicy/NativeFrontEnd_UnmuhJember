@@ -1,6 +1,6 @@
 const questions = [
     {
-        question : "Apa kepanjangan dari HTML?PEMBEDA HAPUS AJA",
+        question : "Apa kepanjangan dari HTML?",
         optionA : "Hyper Text Markup Language",
         optionB : "Hyper Text Multiple Language",
         optionC : "Hyper Tool Multi Language",
@@ -8,35 +8,35 @@ const questions = [
         correctOption : "optionA"
     },
     {
-        question : "CSS digunakan untuk apa dalam pengembangan web?",
-        optionA : "Menambahkan interaktivitas ke halaman web",
-        optionB : "Mengatur tata letak dan tampilan halaman web",
-        optionC : "Memproses data dan interaksi pengguna di sisi klien",
-        optionD : "Membangun server dan mengelola database",
+        question : "Bahasa pemrograman yang digunakan untuk mengatur tampilan dan tata letak halaman web adalah?",
+        optionA : "HTML",
+        optionB : "CSS",
+        optionC : "PHP",
+        optionD : "JavaScript",
         correctOption : "optionB"
     },
     {
-        question : "JavaScript adalah bahasa pemrograman yang digunakan untuk apa?",
-        optionA : "Mengatur tata letak dan desain halaman web",
-        optionB : "Membangun server dan mengelola database",
-        optionC : "Membuat animasi dan efek visual di halaman web",
-        optionD : "Membuat tampilan halaman web yang interaktif",
+        question : "Bahasa pemrograman yang digunakan untuk membuat tampilan halaman web yang interaktif adalah?",
+        optionA : "HTML",
+        optionB : "Python",
+        optionC : "PHP",
+        optionD : "JavaScript",
         correctOption : "optionD"
     },
     {
         question : "Python adalah bahasa pemrograman yang sering digunakan untuk apa?",
         optionA : "Membuat slide presentasi",
         optionB : "Membuat aplikasi mobile",
-        optionC : "Analisis data dan kecerdasan buatan",
+        optionC : "Analisis data",
         optionD : "Pengembangan web",
         correctOption : "optionC"
     },
     {
-        question : "PHP adalah bahasa pemrograman yang sering digunakan untuk apa?",
-        optionA : "Mengatur tata letak dan tampilan halaman web",
-        optionB : "Membuat tampilan halaman web yang interaktif",
-        optionC : "Memproses data dan interaksi pengguna di sisi server",
-        optionD : "Membuat aplikasi mobile",
+        question : "Bahasa pemrograman yang digunakan untuk memproses data dan interaksi pengguna di sisi server adalah?",
+        optionA : "CSS",
+        optionB : "Python",
+        optionC : "PHP",
+        optionD : "JavaScript",
         correctOption : "optionC"
     },
     {
@@ -56,19 +56,19 @@ const questions = [
         correctOption : "optionD"
     },
     {
-        question : "Fungsi print() dalam Python digunakan untuk apa?",
-        optionA : "Membuat loop atau pengulangan",
-        optionB : "Mengambil input dari pengguna",
-        optionC : "Memproses string",
-        optionD : "Menampilkan output ke konsol",
+        question : "Fungsi dalam Python yang digunakan untuk menampilkan output ke konsol adalah?",
+        optionA : "input()",
+        optionB : "range()",
+        optionC : "len()",
+        optionD : "print()",
         correctOption : "optionD"
     },
     {
-        question : "Apa yang digunakan untuk menghubungkan file CSS eksternal dengan halaman HTML?",
-        optionA : "<link>",
-        optionB : "<style>",
-        optionC : "<scrypt>",
-        optionD : "<head>",
+        question : "Bahasa pemrograman yang sering digunakan untuk membuat aplikasi web dinamis adalah?",
+        optionA : "JavaScript",
+        optionB : "HTML",
+        optionC : "PHP",
+        optionD : "CSS",
         correctOption : "optionA"
     },
     {
