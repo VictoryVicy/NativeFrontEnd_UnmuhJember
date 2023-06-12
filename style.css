@@ -36,7 +36,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     background-color: #f8f8f800;
-    padding: 20px;
+    padding: 10px 20px;
     z-index: 2;
     transition: all 0.5s ease-in-out;
     -webkit-transition: all 0.5s ease-in-out;
@@ -91,9 +91,11 @@ nav {
 .burger div {
     width: 25px;
     height: 3px;
-    background-color: #333;
+    background-color: #000000;
     margin: 3px;
     transition: all 0.5s ease-in-out;
+    /* add glow */
+    
 }
 
 .scrolled-nav {
@@ -118,7 +120,6 @@ nav {
         justify-content: space-between;
         align-items: center;
         background-color: #f8f8f800;
-        padding: 20px;
     }
 
     .scrolled-mini {
@@ -286,6 +287,7 @@ h1, h2, h3, h4, h5, h6 {
     .hide-md {
         display: none;
     }
+
     .title {
         font-size: 50px;
         font-weight: 700;
