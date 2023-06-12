@@ -613,47 +613,7 @@ h1, h2, h3, h4, h5, h6 {
     transition: all 0.3s ease-out;
 }
 
-.merah:after {
-    content: "";
-    width: 118px;
-    height: 118px;
-    display: block;
-    position: absolute;
-    border-radius: 50%;
-    top: 7px;
-    left: 7px;
-    transition: opacity 0.3s ease-out;
-    background-image: url(assets/img/merah.png);
-    background-size: cover;
-}
 
-.ijo:after {
-    content: "";
-    width: 118px;
-    height: 118px;
-    display: block;
-    position: absolute;
-    border-radius: 50%;
-    top: 7px;
-    left: 7px;
-    transition: opacity 0.3s ease-out;
-    background-image: url(assets/img/hijau.png);
-    background-size: cover;
-}
-
-.ungu:after {
-    content: "";
-    width: 118px;
-    height: 118px;
-    display: block;
-    position: absolute;
-    border-radius: 50%;
-    top: 7px;
-    left: 7px;
-    transition: opacity 0.3s ease-out;
-    background-image: url(assets/img/ungu.png);
-    background-size: cover;
-}
 
 /* blob */
 .blobs-container {
