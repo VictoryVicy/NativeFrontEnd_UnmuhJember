@@ -562,6 +562,13 @@ h1, h2, h3, h4, h5, h6 {
     transform: translateZ(0);
 }
 
+.text-center {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
 .pubg {
     width: 131px;
     height: 131px;
@@ -1350,9 +1357,10 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
     line-height: 44px;
     padding-top: 130px;
+    font-family: 'Mukta', sans-serif;
 }
 
-.french {
+.nama-bahasa {
     display: flex;
     text-align: center;
     justify-content: center;
@@ -1364,7 +1372,7 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 150px;
 }
 
-.fries {
+.penjelasan {
     display: flex;
     text-align: center;
     justify-content: center;
@@ -1376,7 +1384,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 500;
 }
 
-.prancis {
+.gambar-bahasa {
     width: 100%;
     height: 100%;
     display: flex;
@@ -1454,7 +1462,9 @@ h1, h2, h3, h4, h5, h6 {
     margin-right: 10px;
 }
 
-.quiz {
+
+
+.quiz-button {
     color: #000;
     background-color: #fff4a3;
     width: 250px;
@@ -1466,9 +1476,9 @@ h1, h2, h3, h4, h5, h6 {
     border: 1px solid #fff;
     border-radius: 5px;
     margin-top: 100px;
-    margin-left: 446px;
     font-size: 35px;
     line-height: 52px;
+    text-decoration: none;
     font-weight: 400;
 }
 
@@ -1773,3 +1783,25 @@ input[type="radio"]:checked~.option {
     -webkit-transform: scale(1.12);
     transform: scale(1.12);
 }
+
+
+@media (max-width: 768px) {
+    .container {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  
+    .col-md-12 {
+      text-align: center;
+    }
+  
+    .quiz-button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #fff4a3;;
+      text-decoration: none;
+      color: #000;
+      border-radius: 5px;
+    }
+  }
+  
