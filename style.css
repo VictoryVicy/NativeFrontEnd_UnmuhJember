@@ -95,7 +95,7 @@ nav {
     margin: 3px;
     transition: all 0.5s ease-in-out;
     /* add glow */
-    
+
 }
 
 .scrolled-nav {
@@ -120,6 +120,7 @@ nav {
         justify-content: space-between;
         align-items: center;
         background-color: #f8f8f800;
+        padding: 10px 20px;
     }
 
     .scrolled-mini {
