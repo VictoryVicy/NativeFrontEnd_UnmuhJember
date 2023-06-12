@@ -452,23 +452,11 @@ h1, h2, h3, h4, h5, h6 {
     --box-shadow-color: #4ea6d96c;
 }
 
-.sutter1 {
-    --bg-color-light: #d12828;
-    --text-color-hover: #ec4040;
-    --box-shadow-color: #fc2b2b6c;
+.show-shadow {
+    --bg-color-light: darkgray;
+    --text-color-hover: darkgray;
+    --box-shadow-color: darkgray;
 
-}
-
-.sutter2 {
-    --bg-color-light: #11bc58;
-    --text-color-hover: #2bff2b;
-    --box-shadow-color: #14ea3b6c;
-}
-
-.sutter3 {
-    --bg-color-light: #9317da;
-    --text-color-hover: #9318d1;
-    --box-shadow-color: #842ee76c;
 }
 
 /* .inner {
@@ -574,7 +562,7 @@ h1, h2, h3, h4, h5, h6 {
     transform: translateZ(0);
 }
 
-.merah {
+.pubg {
     width: 131px;
     height: 131px;
     border-radius: 50%;
@@ -587,7 +575,7 @@ h1, h2, h3, h4, h5, h6 {
     transition: all 0.3s ease-out;
 }
 
-.ijo {
+.mobile-legend {
     width: 131px;
     height: 131px;
     border-radius: 50%;
@@ -600,7 +588,46 @@ h1, h2, h3, h4, h5, h6 {
     transition: all 0.3s ease-out;
 }
 
-.ungu {
+.desain {
+    width: 131px;
+    height: 131px;
+    border-radius: 50%;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    transition: all 0.3s ease-out;
+}
+
+.cyber-security {
+    width: 131px;
+    height: 131px;
+    border-radius: 50%;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    transition: all 0.3s ease-out;
+}
+
+.web-development {
+    width: 131px;
+    height: 131px;
+    border-radius: 50%;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    transition: all 0.3s ease-out;
+}
+
+.computer-network {
     width: 131px;
     height: 131px;
     border-radius: 50%;
@@ -1069,8 +1096,8 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
 }
 
-.allin {
-    background-color: #d12828;
+.to-show-modal {
+    background-color: #0D47A1;
     color: #fff;
     border: 0;
     border-radius: 5px;
@@ -1079,8 +1106,8 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 14px;
 }
 
-.iyadong {
-    background-color: #d12828;
+.close-modal {
+    background-color: #0D47A1;
     color: #fff;
     border: 0;
     border-radius: 5px;
