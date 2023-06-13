@@ -1,5 +1,5 @@
 /* Grid Container */
-.container {
+.inventory {
     width: 100%;
     max-width: 1140px;
     margin-left: auto;
@@ -7,67 +7,67 @@
     box-sizing: border-box;
 }
 
-.container-fluid {
+.inventory-fluid {
     width: 100%;
     box-sizing: border-box;
 }
 /* Grid Columns */
-.col-1 {
+.good-1 {
     width: 8.3333333333%;
     float: left;
 }
 
-.col-2 {
+.good-2 {
     width: 16.6666666667%;
     float: left;
 }
 
-.col-3 {
+.good-3 {
     width: 25%;
     float: left;
 }
 
-.col-4 {
+.good-4 {
     width: 33.3333333333%;
     float: left;
 }
 
-.col-5 {
+.good-5 {
     width: 41.6666666667%;
     float: left;
 }
 
-.col-6 {
+.good-6 {
     width: 50%;
     float: left;
 }
 
-.col-7 {
+.good-7 {
     width: 58.3333333333%;
     float: left;
 }
 
-.col-8 {
+.good-8 {
     width: 66.6666666667%;
     float: left;
 }
 
-.col-9 {
+.good-9 {
     width: 75%;
     float: left;
 }
 
-.col-10 {
+.good-10 {
     width: 83.3333333333%;
     float: left;
 }
 
-.col-11 {
+.good-11 {
     width: 91.6666666667%;
     float: left;
 }
 
-.col-12 {
+.good-12 {
     width: 100%;
     float: left;
 }
@@ -79,7 +79,7 @@
     clear: both;
 }
 
-.img-fluid {
+.image-fluid {
     max-width: 100%;
     height: auto;
 
@@ -90,141 +90,141 @@
 
 @media (min-width: 768px) {
 
-    .col-md {
+    .good-md {
         flex: 1 0 0%;
     }
 
-    .row-cols-md-auto>* {
+    .wor-goods-md-auto>* {
         flex: 0 0 auto;
         width: auto;
     }
 
-    .row-cols-md-1>* {
+    .wor-goods-md-1>* {
         flex: 0 0 auto;
         width: 100%;
     }
 
-    .row-cols-md-2>* {
+    .wor-cols-md-2>* {
         flex: 0 0 auto;
         width: 50%;
     }
 
-    .row-cols-md-3>* {
+    .wor-goods-md-3>* {
         flex: 0 0 auto;
         width: 33.3333333333%;
     }
 
-    .row-cols-md-4>* {
+    .wor-goods-md-4>* {
         flex: 0 0 auto;
         width: 25%;
     }
 
-    .row-cols-md-5>* {
+    .wor-goods-md-5>* {
         flex: 0 0 auto;
         width: 20%;
     }
 
-    .row-cols-md-6>* {
+    .wor-goods-md-6>* {
         flex: 0 0 auto;
         width: 16.6666666667%;
     }
 
-    .col-md-auto {
+    .good-md-auto {
         flex: 0 0 auto;
         width: auto;
     }
 
-    .col-md-1 {
+    .good-md-1 {
         flex: 0 0 auto;
         width: 8.33333333%;
     }
 
-    .col-md-2 {
+    .good-md-2 {
         flex: 0 0 auto;
         width: 16.66666667%;
     }
 
-    .col-md-3 {
+    .good-md-3 {
         flex: 0 0 auto;
         width: 25%;
     }
 
-    .col-md-4 {
+    .good-md-4 {
         flex: 0 0 auto;
         width: 33.33333333%;
     }
 
-    .col-md-5 {
+    .good-md-5 {
         flex: 0 0 auto;
         width: 41.66666667%;
     }
 
-    .col-md-6 {
+    .good-md-6 {
         flex: 0 0 auto;
         width: 50%;
     }
 
-    .col-md-7 {
+    .good-md-7 {
         flex: 0 0 auto;
         width: 58.33333333%;
     }
 
-    .col-md-8 {
+    .good-md-8 {
         flex: 0 0 auto;
         width: 66.66666667%;
     }
 
-    .col-md-9 {
+    .good-md-9 {
         flex: 0 0 auto;
         width: 75%;
     }
 
-    .col-md-10 {
+    .good-md-10 {
         flex: 0 0 auto;
         width: 83.33333333%;
     }
 
-    .col-md-11 {
+    .good-md-11 {
         flex: 0 0 auto;
         width: 91.66666667%;
     }
 
-    .col-md-12 {
+    .good-md-12 {
         flex: 0 0 auto;
         width: 100%;
     }
 }
 
 @media (max-width: 767px) {
-    .container {
+    .inventory {
         flex-direction: column;
     }
 
-    .col-md-1,
-    .col-md-2,
-    .col-md-3,
-    .col-md-4,
-    .col-md-5,
-    .col-md-6,
-    .col-md-7,
-    .col-md-8,
-    .col-md-9,
-    .col-md-10,
-    .col-md-11,
-    .col-md-12 {
+    .good-md-1,
+    .good-md-2,
+    .good-md-3,
+    .good-md-4,
+    .good-md-5,
+    .good-md-6,
+    .good-md-7,
+    .good-md-8,
+    .good-md-9,
+    .good-md-10,
+    .good-md-11,
+    .good-md-12 {
         width: 100%;
         float: none;
     }
 }
 
 
-.row {
+.wor {
     display: flex;
     flex-wrap: wrap;
 
 }
 
-.row>* {
+.wor>* {
     box-sizing: border-box;
     flex-shrink: 0;
     max-width: 100%;
