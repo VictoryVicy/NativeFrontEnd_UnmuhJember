@@ -1006,8 +1006,8 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Lilita One', cursive;
     font-style: normal !important;
     font-weight: 700 !important;
-    font-size: 100px;
-    background: linear-gradient(270deg, #f1f6fd 50%, #104EAD 100%);
+    font-size: 80px;
+    background: linear-gradient(270deg, #e4a000 70%, #104EAD 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -1028,7 +1028,7 @@ h1, h2, h3, h4, h5, h6 {
     column-gap: 30px;
     align-items: center;
     font-family: 'Lilita One', cursive;
-    background: linear-gradient(270deg, #f1f6fd 50%, #104EAD 100%);
+    background: linear-gradient(270deg, #e4a000 70%, #104EAD 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
