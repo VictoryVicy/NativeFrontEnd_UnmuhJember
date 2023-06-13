@@ -15,6 +15,10 @@ body {
     background-color: #f8f8f8;
 }
 
+p {
+    font-family: 'Mukta', sans-serif;
+}
+
 /* nvbar */
 * {
     margin: 0;
@@ -1787,7 +1791,7 @@ input[type="radio"]:checked~.option {
 
 
 @media (max-width: 768px) {
-    .container {
+    .inventory {
       padding-left: 15px;
       padding-right: 15px;
     }

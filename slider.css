@@ -4,7 +4,7 @@ html, body {
     font-family: "Poppins", sans-serif;
 }
 
-.container-c {
+.inventory-c {
     display: flex;
     align-items: center;
     justify-content: center;
