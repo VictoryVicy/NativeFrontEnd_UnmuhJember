@@ -240,12 +240,25 @@
         class="transition-all duration-300 ease-in-out delay-150 path-2" transform="rotate(-180 720 200)"></path>
     </svg>
     <!-- akreditasi -->
-    <section style="background-color: #f8f8f8;">
+    <section class="r-bg" style="background-color: #f8f8f8;">
+      <style>
+        .r-bg {
+          background-image: url(assets/img/bg/iiisometric.svg);
+          background-size: auto;
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+
+        @media screen and (max-width: 768px) {
+          .r-bg {
+            background-image: none;
+          }
+        }
+      </style>
       <div class="inventory"
         style="min-height: 50vh; display: flex; justify-content: center; align-items: center; flex-direction: column;">
         <div class="wor aos">
           <h2 style="padding: 10px;">Akreditasi</h2>
-
         </div>
         <div class="wor aos">
           <div class="good-md-12"
@@ -255,7 +268,7 @@
             <p> dokumen SK dan Sertifikat Akreditasi (Berlaku untuk tahun lululsan 2012 ke atas)</p>
             <div style="text-align: center; margin-top: 20px;">
               <button class="cta">
-                <span>Lihat dokumen</span>
+                <span><a href="http://ti.ft.unmuhjember.ac.id/index.php/id/profil/akreditasi.html" style="text-decoration: none; color: #000;">Lihat dokumen</a></span>
                 <svg viewBox="0 0 13 10" height="10px" width="15px">
                   <path d="M1,5 L11,5"></path>
                   <polyline points="8 1 12 5 8 9"></polyline>
