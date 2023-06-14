@@ -17,55 +17,18 @@
     float: left;
 }
 
-.good-2 {
-    width: 16.6666666667%;
-    float: left;
-}
-
-.good-3 {
-    width: 25%;
-    float: left;
-}
-
 .good-4 {
     width: 33.3333333333%;
     float: left;
 }
 
-.good-5 {
-    width: 41.6666666667%;
-    float: left;
-}
 
 .good-6 {
     width: 50%;
     float: left;
 }
 
-.good-7 {
-    width: 58.3333333333%;
-    float: left;
-}
 
-.good-8 {
-    width: 66.6666666667%;
-    float: left;
-}
-
-.good-9 {
-    width: 75%;
-    float: left;
-}
-
-.good-10 {
-    width: 83.3333333333%;
-    float: left;
-}
-
-.good-11 {
-    width: 91.6666666667%;
-    float: left;
-}
 
 .good-12 {
     width: 100%;
@@ -94,100 +57,19 @@
         flex: 1 0 0%;
     }
 
-    .wor-goods-md-auto>* {
-        flex: 0 0 auto;
-        width: auto;
-    }
 
-    .wor-goods-md-1>* {
-        flex: 0 0 auto;
-        width: 100%;
-    }
-
-    .wor-cols-md-2>* {
-        flex: 0 0 auto;
-        width: 50%;
-    }
-
-    .wor-goods-md-3>* {
-        flex: 0 0 auto;
-        width: 33.3333333333%;
-    }
-
-    .wor-goods-md-4>* {
-        flex: 0 0 auto;
-        width: 25%;
-    }
-
-    .wor-goods-md-5>* {
-        flex: 0 0 auto;
-        width: 20%;
-    }
-
-    .wor-goods-md-6>* {
-        flex: 0 0 auto;
-        width: 16.6666666667%;
-    }
-
-    .good-md-auto {
-        flex: 0 0 auto;
-        width: auto;
-    }
-
-    .good-md-1 {
-        flex: 0 0 auto;
-        width: 8.33333333%;
-    }
-
-    .good-md-2 {
-        flex: 0 0 auto;
-        width: 16.66666667%;
-    }
-
-    .good-md-3 {
-        flex: 0 0 auto;
-        width: 25%;
-    }
 
     .good-md-4 {
         flex: 0 0 auto;
         width: 33.33333333%;
     }
 
-    .good-md-5 {
-        flex: 0 0 auto;
-        width: 41.66666667%;
-    }
 
     .good-md-6 {
         flex: 0 0 auto;
         width: 50%;
     }
 
-    .good-md-7 {
-        flex: 0 0 auto;
-        width: 58.33333333%;
-    }
-
-    .good-md-8 {
-        flex: 0 0 auto;
-        width: 66.66666667%;
-    }
-
-    .good-md-9 {
-        flex: 0 0 auto;
-        width: 75%;
-    }
-
-    .good-md-10 {
-        flex: 0 0 auto;
-        width: 83.33333333%;
-    }
-
-    .good-md-11 {
-        flex: 0 0 auto;
-        width: 91.66666667%;
-    }
 
     .good-md-12 {
         flex: 0 0 auto;
@@ -200,17 +82,8 @@
         flex-direction: column;
     }
 
-    .good-md-1,
-    .good-md-2,
-    .good-md-3,
     .good-md-4,
-    .good-md-5,
     .good-md-6,
-    .good-md-7,
-    .good-md-8,
-    .good-md-9,
-    .good-md-10,
-    .good-md-11,
     .good-md-12 {
         width: 100%;
         float: none;

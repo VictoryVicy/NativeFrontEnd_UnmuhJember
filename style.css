@@ -10,7 +10,7 @@
 }
 
 body {
-    overflow-x: hidden;
+    overflow-x: hidden !important;
     font-family: 'Open Sans', sans-serif !important;
     background-color: #f8f8f8;
 }
@@ -26,9 +26,6 @@ p {
     box-sizing: border-box;
 }
 
-body {
-    overflow-x: hidden;
-}
 
 nav {
     position: fixed;
@@ -811,7 +808,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* gallery */
-.row-c {
+.wor-c {
     margin: 5px;
     position: relative;
 }
@@ -900,10 +897,13 @@ h1, h2, h3, h4, h5, h6 {
     text-decoration: none;
 }
 
-[id^=lightbox-] {
+
+[id^=lightbox] {
     position: fixed;
     top: 0;
     left: 0;
+    bottom: 0;
+    right: 0;
     width: 100vw;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.5);
@@ -913,6 +913,7 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
     justify-content: center;
     pointer-events: none;
+    z-index: 9999;
 }
 
 [id^=lightbox-]:target {
@@ -1091,6 +1092,10 @@ h1, h2, h3, h4, h5, h6 {
     .forkafest-sub {
         padding-top: 30px;
         font-size: 18px !important;
+    }
+
+    .img-f {
+        display: none;
     }
 }
 
@@ -1369,7 +1374,7 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
     justify-content: center;
     align-items: center;
-    font-size: 100px;
+    font-size: 80px;
     font-weight: 700;
     font-style: normal;
     color: #000;
@@ -1378,7 +1383,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .penjelasan {
     display: flex;
-    text-align: center;
+    text-align: justify;
     justify-content: center;
     align-items: center;
     font-size: 16px;
@@ -1396,9 +1401,10 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
     justify-content: center;
     border: 5px;
-    border-radius: 5px;
     margin-left: 30px;
+    border-radius: 5px;
 }
+
 
 @media screen and (max-width: 600px) {
     .learn {
@@ -1411,17 +1417,12 @@ h1, h2, h3, h4, h5, h6 {
         line-height: 40px;
     }
 
-    .french {
+    .nama-bahasa {
         font-size: 50px;
         line-height: 60px;
     }
 
-    .fries {
-        font-size: 12px;
-        line-height: 20px;
-    }
-
-    .prancis {
+    .gambar-bahasa {
         margin-left: 0;
     }
 }
@@ -1792,21 +1793,21 @@ input[type="radio"]:checked~.option {
 
 @media (max-width: 768px) {
     .inventory {
-      padding-left: 15px;
-      padding-right: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
-  
+
     .col-md-12 {
-      text-align: center;
+        text-align: center;
     }
-  
+
     .quiz-button {
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: #fff4a3;;
-      text-decoration: none;
-      color: #000;
-      border-radius: 5px;
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #fff4a3;
+        ;
+        text-decoration: none;
+        color: #000;
+        border-radius: 5px;
     }
-  }
-  
+}
