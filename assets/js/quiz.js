@@ -127,7 +127,7 @@ function checkForAnswer() {
 
     options.forEach((option) => {
         if (option.checked === true && option.value === currentQuestionAnswer) {
-            document.getElementById(correctOption).style.backgroundColor = "green"
+            document.getElementById(correctOption).style.backgroundColor = "#2fee82"
             playerScore++
             indexNumber++
             setTimeout(() => {
@@ -137,8 +137,8 @@ function checkForAnswer() {
 
         else if (option.checked && option.value !== currentQuestionAnswer) {
             const wrongLabelId = option.labels[0].id
-            document.getElementById(wrongLabelId).style.backgroundColor = "red"
-            document.getElementById(correctOption).style.backgroundColor = "green"
+            document.getElementById(wrongLabelId).style.backgroundColor = "#f97070"
+            document.getElementById(correctOption).style.backgroundColor = "#2fee82"
             wrongAttempt++
             indexNumber++
             setTimeout(() => {
